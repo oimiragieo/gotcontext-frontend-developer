@@ -1,0 +1,2 @@
+Bundled from https://github.com/google-labs-code/stitch-skills
+License: Apache-2.0 — see LICENSES/upstream/stitch-skills-Apache-2.0.txt

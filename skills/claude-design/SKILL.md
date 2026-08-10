@@ -26,16 +26,17 @@ Available on **Pro / Max / Team / Enterprise**. NOT on Free. Usage now **shares 
 ## When NOT to use
 
 - **Cloning a specific reference UI screenshot/URL** → use `aura-screenshot-clone` skill (aura.build Pro is the project's asset source-of-truth)
+- **Greenfield high-fi UI from natural language via Google Stitch MCP** → use `stitch-mcp-design` (remote MCP + optional google-labs-code/stitch-skills)
 - **Translating an existing Figma file into code** → use `figma:figma-implement-design`
-- **Mass image picking for hero/landing imagery** → use `web-aura-asset-images` then `web-unsplash-asset-images`
-- **Production component edits in `apps/web/`** → just edit React directly; Claude Design is for the design phase, not codebase surgery
+- **Mass image picking for hero/landing imagery** → use `mengto-aura-asset-images`
+- **Production component edits in the app repo** → edit the code directly; Claude Design is for the design phase, not codebase surgery
 - **Anything that needs an audit trail** (compliance, legal review, regulated industry) — research preview has no audit logs yet
 - **Free-plan users** — feature isn't available
 
 ## Quick start (fresh session, 5 minutes)
 
-1. Navigate to `https://claude.ai/design` (drive it programmatically via `use-claude-in-chrome` — needs the CEO's Claude login; `navigate` → prompt in the chat pane → `file_upload` reference screenshots → `take_screenshot` each state. `chrome-devtools-mcp` can't be used here — it has no logged-in session.)
-2. **Connect our real design system FIRST (the load-bearing step).** Two paths: (a) **`/design-sync`** from a Claude Code session — pushes a linked GitHub repo / design files / the local `apps/web/` codebase into Claude Design so generation starts from our real components + `aura.css` tokens (shipped 2026-06-17; the cleanest path for us); or (b) **lower-left org name → "Set up design system"** → upload the codebase (React component library = highest fidelity), slide decks, brand PDFs → toggle **Published** ON. Skip if already connected.
+1. Navigate to `https://claude.ai/design` (drive it programmatically via logged-in browser automation when available — `navigate` → prompt → upload reference screenshots → screenshot each state. DevTools-only MCP often has no logged-in session.)
+2. **Connect a real design system first.** Prefer **`/design-sync`** from Claude Code (GitHub / design files / local app codebase) so generation starts from real components and tokens; or use org **Set up design system** → upload library / brand assets → **Published** ON.
 3. From the homepage, pick a project type:
    - **Prototype** → New prototype / Wireframe / High fidelity
    - **Slide deck**
@@ -122,9 +123,10 @@ Scope is **organization-wide** — auto-applies for all team members on Team/Ent
 | Brand-new feature mockup, no existing reference | **claude-design** |
 | Pitch deck or slide work for the company | **claude-design** (Slide deck mode) |
 | Match a specific reference UI screenshot/URL | `aura-screenshot-clone` |
+| Generate/iterate UI in Google Stitch via MCP | `stitch-mcp-design` |
 | Convert an existing Figma file → React | `figma:figma-implement-design` |
-| Hero/landing imagery picking | `web-aura-asset-images` → `web-unsplash-asset-images` fallback |
-| Direct edit of a live `apps/web/` component | Edit React directly — no design tool needed |
+| Hero/landing imagery picking | `mengto-aura-asset-images` |
+| Direct edit of a live app component | Edit the code directly — no design tool needed |
 | Visual review of a live deployed page | `frontend-audit` skill + claude-in-chrome MCP |
 
 ## What to verify after handing off to Claude Code
@@ -135,14 +137,17 @@ The handoff seeds the next session with design context, but Claude Code still ne
 3. Verify in the browser at 375 / 1024 / 1440 viewports — `frontend-audit` skill or claude-in-chrome MCP
 4. Pin a regression test if the design encodes a non-obvious invariant
 
-## gotcontext recommended path + the 2026 competitor landscape (verified via Exa 2026-06-28)
+## Recommended path + design→code landscape
 
-**For this repo:** run **`/design-sync`** from a Claude Code session at repo root to publish `apps/web`'s React component library + `aura.css` tokens as our Claude Design org design system. Then every mockup comes back on-brand (real components), and you hand back to Claude Code for the build. **Visuals round-trip; state logic NEVER leaves the React code** — all these tools round-trip markup / design-tokens / Figma layers, never hooks/state. *(Not yet run as of 2026-06-28 — fire it when we next pick up UI work; it consumes the shared subscription pool, so don't run it speculatively.)*
+Prefer **`/design-sync`** so prototypes start from the product’s real components and
+design tokens. Visuals round-trip; **state logic stays in application code**.
 
-**Verified design→code tool landscape (all confirmed via Exa 2026-06-28 — corrects the earlier "Aura→Figma is unverifiable" doubt; it's real):**
-- **aura.build** (our asset + clone source-of-truth) — outputs HTML/Tailwind/vanilla JS (+ newer React projects). **Figma export IS real** via the browser-console method (Pro feature; Auto Layout; respects preview size 1440/1024/393) + **import from Figma** by pasting a URL. Design model cycles (currently Gemini 3.1 Pro). Reach via `aura-screenshot-clone` + `web-aura-asset-images`.
-- **Figma** — the real code bridge is the **Figma MCP server** (remote `https://mcp.figma.com/mcp` + desktop) into Claude Code/Cursor/VS Code, NOT console-paste. **Figma Make** now edits your local production codebase (beta, Git/PR workflow) + can capture live UI → editable Figma layers (`generate_figma_design`). Reach via `figma:*` plugin skills + Dev Mode + Code Connect.
-- **Google Stitch** (stitch.withgoogle.com, Gemini 3) + **Google Antigravity** (agentic IDE) — Google's full design→code stack, bridged by the Stitch MCP server + SDK + an agent-friendly `DESIGN.md` token file. Direct Claude-Design analog; not in our stack today, noted for awareness.
+- **aura.build** — HTML/Tailwind/vanilla JS (+ React projects); Figma import/export
+  on Pro. Use `aura-screenshot-clone` + `mengto-aura-asset-images`.
+- **Figma** — Figma MCP (`https://mcp.figma.com/mcp`) into the IDE; Dev Mode /
+  Code Connect for implementation.
+- **Google Stitch** — Stitch MCP + pack skills via `stitch-mcp-design`
+  (~400 credits/day).
 
 ## Sources
 

@@ -17,6 +17,7 @@ pack docs, gotcontext-authored skills). Upstream bodies keep their own licenses.
 | `agents-main` | Sample UI skills | MIT © 2024 Seth Hobson | [LICENSES/upstream/agents-MIT.txt](LICENSES/upstream/agents-MIT.txt) |
 | `awesome-copilot-main` | Sample UI skills | MIT © GitHub, Inc. | [LICENSES/upstream/awesome-copilot-MIT.txt](LICENSES/upstream/awesome-copilot-MIT.txt) |
 | `threejs-skills-main` | MUST — `threejs-*` | MIT (asserted in upstream README; no LICENSE file / GitHub license null) | [LICENSES/upstream/threejs-skills-MIT-from-README.txt](LICENSES/upstream/threejs-skills-MIT-from-README.txt) |
+| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | Bundled as `stitch-*` phase skills | Apache-2.0 | [LICENSES/upstream/stitch-skills-Apache-2.0.txt](LICENSES/upstream/stitch-skills-Apache-2.0.txt) + per-skill `NOTICE.stitch-skills.txt` |
 
 Cinematic skill also credits [oso95/scroll-world](https://github.com/oso95/scroll-world) for related scroll/seam concepts.
 
@@ -27,7 +28,8 @@ root MIT (gotcontext.ai):
 
 `ai-governors`, `ai-trust-builders`, `ai-wayfinders`, `aura-screenshot-clone`,
 `claude-design`, `claude-design-adaptation`, `clone-website`, `frontend-audit`,
-`real-user-qa`, `tui-observe-first`, `ui-fix-observe-first`.
+`real-user-qa`, `tui-observe-first`, `ui-fix-observe-first`, `stitch-mcp-design`
+(router/budget only — phase bodies are Apache-2.0 from stitch-skills).
 
 ## Held back (not redistributed publicly)
 

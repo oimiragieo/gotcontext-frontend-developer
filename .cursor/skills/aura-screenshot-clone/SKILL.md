@@ -27,7 +27,13 @@ Full pipeline for cloning any web UI pattern into a gotcontext.ai React/Next.js 
 
 **Core principle:** Never write layout from scratch when you can URL-import / screenshot → convert → adapt. AI vision at ~90% in one shot; you spend effort only on the 10% that makes it uniquely gotcontext.ai.
 
-> This is one branch of the broader `design-to-code-pipeline` router (Path 1C). For which generate-path to pick — Claude Design (1A) vs Figma (1B) vs clone (1C) — and the full spine, see `design-to-code-pipeline`.
+> This is one branch of the broader design-to-code router (**Path 1C**). Sibling paths:
+> - **1A** Claude Design → `claude-design`
+> - **1B** Figma SoT → Figma MCP / `figma-design-to-code`
+> - **1C** Clone reference URL/screenshot → **this skill** (`aura-screenshot-clone`)
+> - **1D** Google Stitch MCP (NL → high-fi screens → code) → `stitch-mcp-design`
+>
+> Use Stitch when you are **authoring** a new UI in Stitch, not when cloning an existing live site (Aura).
 
 ---
 
@@ -36,10 +42,4 @@ Full pipeline for cloning any web UI pattern into a gotcontext.ai React/Next.js 
 Before anything else, pick the **input path** to aura. Two options, order of preference:
 
 1. **URL import (preferred)** — aura fetches and screenshots the reference itself. Skip manual screenshots entirely. **Fails on sites that block server-side fetches** (Cloudflare, anti-bot WAFs, login-walled content). Known to fail: `artificialanalysis.ai`, `openrouter.ai`, many high-traffic SaaS comparison sites. Known to work: most marketing pages (Anthropic, Vercel, Stripe, GitHub pricing), Wikipedia, blog posts.
-2. **Screenshot upload** — you capture via `mcp__claude-in-chrome__computer action=screenshot` and attach via aura's paperclip. Works for any site you can load in the browser, including login-walled content. Slower and requires juggling an OS file dialog — **only reachable if the image is saved to a local path that the browser file picker can reach**, which the MCP screenshot pipeline does not provide out of the box. In practice this path is unreliable from Claude Code without a local-filesystem helper.
-
-**Rule:** Try URL import first. If aura shows "URL import failed — Failed to fetch" (within ~3s), don't retry on the same domain — pick a different reference or fall back to the **no-aura direct rebuild** (see Phase 2.5 below).
-
-Do **not** spend more than one URL attempt per reference. If two references in a row fail, stop the aura path and go direct.
-
 ```

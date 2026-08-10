@@ -23,13 +23,13 @@ description: Use AFTER a Claude-Design export exists and BEFORE the render-verif
 - After receiving a Claude-Design export zip and before writing any production JSX.
 - When a design audit finds mock data, invented metrics, or inline-styled clone components in a shipped page.
 - NOT during the design generation phase — invoke `claude-design` first to produce the export, then this skill to adapt it.
-- Pairs with `claude-design` (produces the export this skill adapts). (Prior refs to `gc-brand-voice`/`ui-rater`/`web-creation-checklist` were dead — removed 2026-07-14.)
+- Pairs with `claude-design` (produces the export this skill adapts).
 
 ## P1: Study the zip before touching code
 
 Open `manifest.json`, `tokens/`, and `design.html` before writing a line. Identify:
-- Token names that collide with or duplicate `aura.css var(--*)` — map them, don't add new variables.
-- Existing components in `apps/web/src/components/` that cover the same pattern under a different name.
+- Token names that collide with or duplicate existing `var(--*)` design tokens — map them, don't add new variables.
+- Existing components in the app that cover the same pattern under a different name.
 - Which sections belong on the EXISTING route vs an implied new route that doesn't exist yet.
 
 Adapt the layout concepts. Never copy the JSX.

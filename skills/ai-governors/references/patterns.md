@@ -1,7 +1,7 @@
 # Governor patterns (catalog)
 
 Source adapted from tommyjepsen/awesome-ux-skills `ai-governors`.
-Use with [SKILL.md](../SKILL.md) for JARVIS seam mapping.
+Use with [SKILL.md](../SKILL.md) for product seam mapping.
 
 | # | Pattern | One-liner |
 |---|---|---|

@@ -13,7 +13,13 @@ Full pipeline for cloning any web UI pattern into a gotcontext.ai React/Next.js 
 
 **Core principle:** Never write layout from scratch when you can URL-import / screenshot → convert → adapt. AI vision at ~90% in one shot; you spend effort only on the 10% that makes it uniquely gotcontext.ai.
 
-> This is one branch of the broader `design-to-code-pipeline` router (Path 1C). For which generate-path to pick — Claude Design (1A) vs Figma (1B) vs clone (1C) — and the full spine, see `design-to-code-pipeline`.
+> This is one branch of the broader design-to-code router (**Path 1C**). Sibling paths:
+> - **1A** Claude Design → `claude-design`
+> - **1B** Figma SoT → Figma MCP / `figma-design-to-code`
+> - **1C** Clone reference URL/screenshot → **this skill** (`aura-screenshot-clone`)
+> - **1D** Google Stitch MCP (NL → high-fi screens → code) → `stitch-mcp-design`
+>
+> Use Stitch when you are **authoring** a new UI in Stitch, not when cloning an existing live site (Aura).
 
 ---
 
@@ -190,7 +196,7 @@ Skip this phase if going straight to implementation.
 Read the HTML carefully. Identify:
 - State that needs `useState` (menu open/close, tab active, scroll)
 - Repeated elements that need `.map()` over data arrays
-- Inline styles that should become `aura.css` classes
+- Inline styles that should become design-token / shared CSS classes
 - Hard-coded text that should be props
 
 ### 4c. Conversion rules
@@ -199,37 +205,27 @@ Read the HTML carefully. Identify:
 |---|---|
 | `onclick="toggleMenu()"` | `const [open, setOpen] = useState(false)` |
 | `class="..."` | `className="..."` |
-| Inline `style="color:..."` | Check `aura.css` for existing class; else keep inline |
-| `<a href="/pricing">` | `<Link href="/pricing">` from next/link |
+| Inline `style="color:..."` | Prefer existing token/class; else keep inline briefly |
+| `<a href="/pricing">` | Framework `Link` when routing is client-side |
 | Hardcoded text | Move to props or i18n key |
 | `<script>` event listeners | `useEffect` + `addEventListener` |
-| Vanilla JS animations | Keep as CSS transitions; move keyframes to `aura.css` |
+| Vanilla JS animations | Prefer CSS transitions/keyframes in shared styles |
 
 ### 4d. Placement decisions
 
-| Component type | Where it lives |
-|---|---|
-| Marketing nav/header | `apps/web/src/components/landing/LandingPage.tsx` (or extracted component) |
-| Public page section | `apps/web/src/components/landing/` |
-| Dashboard component | `apps/web/src/features/dashboard/` |
-| Shared UI primitive | `apps/web/src/components/ui/` |
-| Page-level layout | `apps/web/src/app/[locale]/(unauth)/layout.tsx` |
+Put marketing sections with other landing surfaces, dashboard pieces under the
+feature area that owns them, and shared primitives in the design-system / UI kit
+folder — follow the target app’s existing layout conventions.
 
-### 4e. Add to existing aura.css or extend
+### 4e. Extend the design-token / shared stylesheet
 
-If the component uses new CSS patterns:
-- Add class names to `apps/web/src/styles/aura.css`
-- Follow the existing naming: `.aura-[section]-[element]`
-- Move regex patterns to module scope if needed
-- Keep `@keyframes` at module scope
+If the component introduces new CSS patterns, add them to the product’s shared
+token/stylesheet with the project’s naming convention. Keep `@keyframes` at
+module or global scope consistently with the rest of the codebase.
 
 ### 4f. Run quality gates before committing
 
-```bash
-cd apps/web
-npm run check-types     # 0 TypeScript errors required
-npm run lint            # 0 errors in modified files required
-```
+Run the target app’s typecheck and lint on modified files (zero errors required).
 
 Fix all errors. Commit with descriptive message referencing the inspiration source.
 
@@ -277,7 +273,7 @@ Key UI patterns already in codebase:
 | Using Nano Banana model | Switch to Claude Opus or Gemini Pro BEFORE submitting. Gemini 3.1 Pro is usually the default now. |
 | Cloning without changing branding | Always include "CHANGE" section in prompt |
 | Forgetting `<Link>` for internal routes | Search for `href="/"` patterns after conversion |
-| Inline styles that conflict with aura.css | Check existing classes first, extend rather than duplicate |
+| Inline styles that conflict with shared tokens | Prefer existing classes; extend rather than duplicate |
 | Missing `overflow-x: hidden` on new sections | Add to section wrapper if content bleeds |
 | Spending >15 min on aura when it's stuck | Bail to Phase 2.5. Direct React rebuild is faster than fighting the tool when it's not cooperating. |
 
@@ -298,5 +294,11 @@ Key UI patterns already in codebase:
 
 Aura publishes a first-party usage guide at **`https://www.aura.build/skills/2fe2aabf-9602-4ef3-9402-6442e9a3ee63/aura-ai-website-builder`** (TOC: Introduction · How to Prompt · SEO Settings · Sell Templates · HTML Designs · Screen Recording). Consult it when you drive aura's **generative** builder (prompt → landing page) rather than a URL/screenshot clone. Two takeaways that affect OUR export→adapt pipeline:
 
-- **HTML export is SEO-bare off aura's own domain (verified 2026-07-05).** Aura injects a full static-SEO block (`<meta description>`, OG, Twitter card, `SoftwareApplication` JSON-LD, favicon, gtag) tagged `data-static-seo="true"` — but an inline script **strips every `data-static-seo` node on subdomains + custom domains**, and gtag only fires on aura's own hostnames. So an aura-exported page hosted anywhere but aura.build has **no title/description/OG/JSON-LD/analytics**. When adapting aura HTML into `apps/web`, this is a non-issue for us because Next.js `generateMetadata` supplies our real SEO — but NEVER assume the exported HTML's `<head>` carries usable SEO; it doesn't. Always author metadata on our side.
-- **Prompting aura's builder:** aura is tuned for **marketing/landing** layouts (hero, features, pricing, CTA) — it excels there and struggles on data-dense app UIs (tables/charts/dashboards → prefer Phase 2.5 direct rebuild, already noted above). Prompt it with a concrete section list + a reference tone, not a vague "make a page." Keep the aura output as a **layout reference** and adapt to `aura.css var(--*)` tokens + real data (never ship aura's placeholder copy/numbers — same rule as `claude-design-adaptation`).
+- **HTML export is SEO-bare off aura's own domain.** Aura injects a static-SEO
+  block tagged `data-static-seo="true"`, but an inline script strips those nodes
+  on subdomains/custom domains. Never assume exported `<head>` carries usable
+  SEO — author metadata in the target app.
+- **Prompting aura's builder:** aura is strong on marketing/landing layouts and
+  weaker on data-dense app UIs (prefer a direct rebuild there). Prompt with a
+  concrete section list + tone. Treat output as a **layout reference**; adapt to
+  the product’s design tokens and real data (never ship placeholder copy/numbers).

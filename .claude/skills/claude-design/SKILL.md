@@ -40,6 +40,6 @@ Available on **Pro / Max / Team / Enterprise**. NOT on Free. Usage now **shares 
 ## When NOT to use
 
 - **Cloning a specific reference UI screenshot/URL** → use `aura-screenshot-clone` skill (aura.build Pro is the project's asset source-of-truth)
+- **Greenfield high-fi UI from natural language via Google Stitch MCP** → use `stitch-mcp-design` (remote MCP + optional google-labs-code/stitch-skills)
 - **Translating an existing Figma file into code** → use `figma:figma-implement-design`
-- **Mass image picking for hero/landing imagery** → use `web-aura-asset-images` then `web-unsplash-asset-images`
 ```

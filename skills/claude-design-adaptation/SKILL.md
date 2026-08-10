@@ -9,13 +9,13 @@ description: Use AFTER a Claude-Design export exists and BEFORE the render-verif
 - After receiving a Claude-Design export zip and before writing any production JSX.
 - When a design audit finds mock data, invented metrics, or inline-styled clone components in a shipped page.
 - NOT during the design generation phase — invoke `claude-design` first to produce the export, then this skill to adapt it.
-- Pairs with `claude-design` (produces the export this skill adapts). (Prior refs to `gc-brand-voice`/`ui-rater`/`web-creation-checklist` were dead — removed 2026-07-14.)
+- Pairs with `claude-design` (produces the export this skill adapts).
 
 ## P1: Study the zip before touching code
 
 Open `manifest.json`, `tokens/`, and `design.html` before writing a line. Identify:
-- Token names that collide with or duplicate `aura.css var(--*)` — map them, don't add new variables.
-- Existing components in `apps/web/src/components/` that cover the same pattern under a different name.
+- Token names that collide with or duplicate existing `var(--*)` design tokens — map them, don't add new variables.
+- Existing components in the app that cover the same pattern under a different name.
 - Which sections belong on the EXISTING route vs an implied new route that doesn't exist yet.
 
 Adapt the layout concepts. Never copy the JSX.
@@ -36,11 +36,19 @@ Label any placeholder content "Sample" explicitly if it must ship before real da
 
 ## P4: Token-first mapping
 
-Every color, spacing value, and type style from the export resolves to an existing `var(--*)` in `aura.css` (authoritative token source). Flag off-token hex values in the PR description. Never silently add a new CSS variable — if the export introduces a genuinely new token, add it to `aura.css` in the same commit with a comment explaining why it can't map to an existing one.
+Every color, spacing value, and type style from the export resolves to an existing
+`var(--*)` in the product’s design-token source. Flag off-token hex values in the
+PR description. Never silently add a new CSS variable — if the export introduces
+a genuinely new token, add it to the token file in the same change with a comment
+explaining why it cannot map to an existing one.
 
 ## P5: Component reuse first
 
-Before writing a new component, `grep -r` the exports's component intent against `apps/web/src/components/`. If an existing `<Button>`, `<Card>`, or `<Dialog>` covers ≥80% of the need, extend it via props or variants. Introducing a parallel inline-styled clone creates drift that accumulates across design cycles. Only create a new component when there is no existing analog and the new one will be reused in ≥2 places.
+Before writing a new component, search the app’s component library for the same
+intent. If an existing `<Button>`, `<Card>`, or `<Dialog>` covers ≥80% of the need,
+extend it via props or variants. Introducing a parallel inline-styled clone creates
+drift. Only create a new component when there is no existing analog and it will be
+reused in ≥2 places.
 
 ## P6: Scope discipline — existing route, new section
 

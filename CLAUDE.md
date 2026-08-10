@@ -1,6 +1,4 @@
 # Gotcontext Frontend Developer
 
-Same contract as [AGENTS.md](AGENTS.md). Load matching `skills/<slug>/SKILL.md`
-before UI/UX implementation work. Prefer cinematic / threejs / impeccable craft
-skills over generic layout guesses. Respect upstream licenses in
-[ATTRIBUTION.md](ATTRIBUTION.md).
+Follow [AGENTS.md](AGENTS.md). Prefer craft skills (cinematic, threejs, impeccable)
+over generic layout guesses. For Stitch, start at `stitch-mcp-design`.

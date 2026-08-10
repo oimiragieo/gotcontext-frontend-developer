@@ -61,3 +61,16 @@ temp/
 **/frames/
 **/depths/
 *.lanczos-upscale*
+
+# Local secrets
+stitch.txt
+*.stitch.key
+
+# Generated map / integrity noise (not part of the ship surface)
+FOLDER_MAP.md
+**/FOLDER_MAP.md
+REPO_MAP.md
+CODEBASE_MAP.md
+PACK_INTEGRITY.v1.json
+CUTOVER.json
+thinktank_merge_manifest.json

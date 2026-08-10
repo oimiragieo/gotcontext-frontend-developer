@@ -2,19 +2,19 @@
   "included": [
     {
       "slug": "ai-governors",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-governors"
+      "source": "skills/ai-governors"
     },
     {
       "slug": "ai-trust-builders",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-trust-builders"
+      "source": "skills/ai-trust-builders"
     },
     {
       "slug": "ai-wayfinders",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-wayfinders"
+      "source": "skills/ai-wayfinders"
     },
     {
       "slug": "aura-screenshot-clone",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/aura-screenshot-clone"
+      "source": "skills/aura-screenshot-clone"
     },
     {
       "slug": "cinematic-3d-website",
@@ -22,19 +22,19 @@
     },
     {
       "slug": "claude-design",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/claude-design"
+      "source": "skills/claude-design"
     },
     {
       "slug": "claude-design-adaptation",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/claude-design-adaptation"
+      "source": "skills/claude-design-adaptation"
     },
     {
       "slug": "clone-website",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/clone-website"
+      "source": "skills/clone-website"
     },
     {
       "slug": "frontend-audit",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/frontend-audit"
+      "source": "skills/frontend-audit"
     },
     {
       "slug": "impeccable",
@@ -422,7 +422,7 @@
     },
     {
       "slug": "real-user-qa",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/real-user-qa"
+      "source": "skills/real-user-qa"
     },
     {
       "slug": "sample-agents-accessibility-compliance",
@@ -485,6 +485,70 @@
       "source": "awesome-copilot-main/skills/web-design-reviewer"
     },
     {
+      "slug": "stitch-code-to-design",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-design-md",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-enhance-prompt",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-extract-design-md",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-extract-static-html",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-generate-design",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-loop",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-manage-design-system",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-mcp-design",
+      "source": "gotcontext-authored (pack MIT router)"
+    },
+    {
+      "slug": "stitch-react-components",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-react-native",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-react-vite-dashboard",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-remotion",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-shadcn-ui",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-taste-design",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
+      "slug": "stitch-upload-to-stitch",
+      "source": "google-labs-code/stitch-skills (Apache-2.0 bundle)"
+    },
+    {
       "slug": "threejs-animation",
       "source": "threejs-skills-main/skills/threejs-animation"
     },
@@ -526,11 +590,11 @@
     },
     {
       "slug": "tui-observe-first",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/tui-observe-first"
+      "source": "skills/tui-observe-first"
     },
     {
       "slug": "ui-fix-observe-first",
-      "source": "$ULTIMATE_UI_SOURCE_ROOT/ui-fix-observe-first"
+      "source": "skills/ui-fix-observe-first"
     },
     {
       "slug": "uupm-banner-design",
@@ -626,5 +690,5 @@
     "replaced-removed:ux-ai-trust-builders",
     "replaced-removed:ux-ai-wayfinders"
   ],
-  "skill_count": 141
+  "skill_count": 157
 }

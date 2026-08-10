@@ -14,10 +14,14 @@ Load and follow the canonical SKILL.md (and sibling refs/scripts there).
 ```markdown
 ---
 name: ai-trust-builders
-description: "Use when designing JARVIS/console trust, privacy, or honesty UX — OpenRouter/cloud disclosure, voice/mic consent, transcript retention, memory ownership, AI labeling, caveats, or audit footprints. Trigger on 'disclose cloud', 'recording consent', 'what did we send', watermark, incognito, or data-ownership settings."
+description: >-
+  Use when designing AI product trust, privacy, or honesty UX — cloud
+  disclosure, voice/mic consent, transcript retention, memory ownership, AI
+  labeling, caveats, or audit footprints. Trigger on disclose cloud, recording
+  consent, watermark, incognito, or data-ownership settings.
 ---
 
-# AI Trust Builders — JARVIS honesty & privacy UX
+# AI Trust Builders — honesty & privacy UX
 
 Trust builders make the system **legible**: what is AI, what left the machine,
 what was retained, and how to refuse. Complementary to governors (control of
@@ -28,18 +32,14 @@ Adapted from tommyjepsen/awesome-ux-skills `ai-trust-builders`.
 
 ## When to use
 
-- Cloud cutover, dreaming on OpenRouter, voice enrollment, webcam, transcript
-  manifests, recall blocks, console Settings/Admin privacy copy.
+- Cloud providers, voice enrollment, camera, transcript retention, memory,
+  settings / privacy copy.
 - Auditing whether a feature is honest about where data goes.
-- **Not** for: scanner/framing implementation (`gate-untrusted-content-into-prompts`),
-  cost metering polarity (`default-unknown-to-costly-and-metered`), or HITL
-  confirm shapes (`ai-governors`).
+- **Not** for: scanner/framing implementation, cost metering polarity alone, or
+  HITL confirm shapes (`ai-governors`).
 
-## JARVIS seam → pattern map
+## Seam → pattern map
 
 | Seam | Prefer | Notes |
 |---|---|---|
-| `JARVIS_BRAIN=openrouter:*` / failover | Disclosure + Caveat + Footprints | Persona + recall leave the box on failover (`JARVIS_CLOUD_FAILOVER`) — say so |
-| Transcript dreaming (`LOCAL_ONLY=0`) | Disclosure + Consent + Data Ownership + Footprints | Transcripts to OpenRouter is a privacy event, not a doc footnote |
-| Voice mic / speaker enroll / WebRTC | Consent (+ Disclosure) | Recording indicator; gate mode is Control (governors), consent is Trust |
 ```

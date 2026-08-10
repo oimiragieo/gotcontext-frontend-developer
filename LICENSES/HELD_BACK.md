@@ -1,7 +1,7 @@
 # Held back from public redistribution
 
-These skills were present in the private factory pack but are **not** shipped
-in the public repo because the upstream tree (`awesome-ux-skills-main` /
+These skills are **not** shipped here because the upstream tree
+(`awesome-ux-skills-main` /
 [tommyjepsen/awesome-ux-skills](https://github.com/tommyjepsen/awesome-ux-skills))
 had **no LICENSE** file and GitHub license metadata was null.
 

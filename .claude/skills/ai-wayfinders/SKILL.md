@@ -14,32 +14,32 @@ Load and follow the canonical SKILL.md (and sibling refs/scripts there).
 ```markdown
 ---
 name: ai-wayfinders
-description: "Use when designing JARVIS/console first-run or blank-slate UX — Chat empty state, example prompts, capability discovery, templates, nudges, or follow-ups. Trigger on 'users don't know what to ask', onboarding, suggestion chips, or discoverability — especially omega-console Chat/Voice."
+description: >-
+  Use when designing AI product first-run or blank-slate UX — chat empty state,
+  example prompts, capability discovery, templates, nudges, or follow-ups.
+  Trigger on "users don't know what to ask", onboarding, suggestion chips, or
+  discoverability.
 ---
 
-# AI Wayfinders — JARVIS discoverability UX
+# AI Wayfinders — discoverability UX
 
-Wayfinders reduce blank-slate anxiety and teach **what JARVIS can actually do**
-without lying. Primary home: **omega-console** Chat/Voice and Settings. Telegram
-and phone need lighter forms (no gallery clutter on a lifeline channel).
+Wayfinders reduce blank-slate anxiety and teach **what the product can actually
+do** without over-claiming.
 
 Pattern catalog: [references/patterns.md](references/patterns.md).
 Adapted from tommyjepsen/awesome-ux-skills `ai-wayfinders`.
 
 ## When to use
 
-- Console Chat empty state, composer placeholders, suggestion chips, command
-  palette (`⌘K`), capability help, first voice session.
+- Chat empty state, composer placeholders, suggestion chips, command palette,
+  capability help, first voice session.
 - Fixing "I didn't know it could X" or "it claimed Y and can't".
-- **Not** for: visual craft polish (`ui-fix-observe-first`), HITL confirms
+- **Not** for: visual craft (`ui-fix-observe-first`), HITL confirms
   (`ai-governors`), or privacy disclosure (`ai-trust-builders`).
 
-## JARVIS constraints (non-negotiable)
+## Constraints
 
-1. **Wayfinders must track the capability manifest and flags.** A chip that
-   offers webcam-on-demand when the reflex still intercepts is a false
-   capability line — a product bug, not a nice-to-have.
-2. **Voice/spoken** — few short suggestions; no markdown galleries; channel
-   adapter (`channel-adapter-pattern`) owns delivery shape.
-3. **Deterministic lanes** — suggestions that always hit `deterministic_override`
+1. **Wayfinders must track real capabilities and flags.** A chip that offers a
+   blocked or missing feature is a product bug.
+2. **Voice / spoken** — few short suggestions; no dense galleries.
 ```

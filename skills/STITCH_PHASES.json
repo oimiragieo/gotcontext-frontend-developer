@@ -1,0 +1,51 @@
+{
+  "source": "google-labs-code/stitch-skills",
+  "license": "Apache-2.0",
+  "bundled_slugs": [
+    "stitch-generate-design",
+    "stitch-manage-design-system",
+    "stitch-upload-to-stitch",
+    "stitch-code-to-design",
+    "stitch-extract-design-md",
+    "stitch-extract-static-html",
+    "stitch-react-components",
+    "stitch-react-native",
+    "stitch-react-vite-dashboard",
+    "stitch-remotion",
+    "stitch-shadcn-ui",
+    "stitch-design-md",
+    "stitch-enhance-prompt",
+    "stitch-loop",
+    "stitch-taste-design"
+  ],
+  "phases": {
+    "0_router_budget": [
+      "stitch-mcp-design"
+    ],
+    "1_prompt": [
+      "stitch-enhance-prompt",
+      "stitch-taste-design"
+    ],
+    "2_design_generate": [
+      "stitch-generate-design",
+      "stitch-manage-design-system",
+      "stitch-upload-to-stitch"
+    ],
+    "3_extract": [
+      "stitch-extract-design-md",
+      "stitch-extract-static-html",
+      "stitch-design-md",
+      "stitch-code-to-design"
+    ],
+    "4_build": [
+      "stitch-react-components",
+      "stitch-shadcn-ui",
+      "stitch-react-vite-dashboard",
+      "stitch-react-native",
+      "stitch-remotion"
+    ],
+    "5_iterate": [
+      "stitch-loop"
+    ]
+  }
+}
