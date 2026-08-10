@@ -1,0 +1,630 @@
+{
+  "included": [
+    {
+      "slug": "ai-governors",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-governors"
+    },
+    {
+      "slug": "ai-trust-builders",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-trust-builders"
+    },
+    {
+      "slug": "ai-wayfinders",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/ai-wayfinders"
+    },
+    {
+      "slug": "aura-screenshot-clone",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/aura-screenshot-clone"
+    },
+    {
+      "slug": "cinematic-3d-website",
+      "source": "gotcontext-cinematic-3d-website-main/skills/cinematic-3d-website"
+    },
+    {
+      "slug": "claude-design",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/claude-design"
+    },
+    {
+      "slug": "claude-design-adaptation",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/claude-design-adaptation"
+    },
+    {
+      "slug": "clone-website",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/clone-website"
+    },
+    {
+      "slug": "frontend-audit",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/frontend-audit"
+    },
+    {
+      "slug": "impeccable",
+      "source": "impeccable-main/skill"
+    },
+    {
+      "slug": "mengto-add-shader-cursor-trail",
+      "source": "mengto-Skills-main/agent-skills/web-design/add-shader-cursor-trail"
+    },
+    {
+      "slug": "mengto-agency-grid-layout-minimal",
+      "source": "mengto-Skills-main/agent-skills/web-design/agency-grid-layout-minimal"
+    },
+    {
+      "slug": "mengto-ambient-section-particles",
+      "source": "mengto-Skills-main/agent-skills/web-design/ambient-section-particles"
+    },
+    {
+      "slug": "mengto-animation-on-scroll",
+      "source": "mengto-Skills-main/agent-skills/web-design/animation-on-scroll"
+    },
+    {
+      "slug": "mengto-animation-systems",
+      "source": "mengto-Skills-main/agent-skills/web-design/animation-systems"
+    },
+    {
+      "slug": "mengto-atmosphere-background",
+      "source": "mengto-Skills-main/agent-skills/web-design/atmosphere-background"
+    },
+    {
+      "slug": "mengto-aura-asset-images",
+      "source": "mengto-Skills-main/agent-skills/media/aura-asset-images"
+    },
+    {
+      "slug": "mengto-background-grid-webgl",
+      "source": "mengto-Skills-main/agent-skills/web-design/background-grid-webgl"
+    },
+    {
+      "slug": "mengto-beam-glow-states",
+      "source": "mengto-Skills-main/agent-skills/web-design/beam-glow-states"
+    },
+    {
+      "slug": "mengto-beautiful-shadows",
+      "source": "mengto-Skills-main/agent-skills/web-design/beautiful-shadows"
+    },
+    {
+      "slug": "mengto-blue-cloudy-clean-modern",
+      "source": "mengto-Skills-main/agent-skills/web-design/blue-cloudy-clean-modern"
+    },
+    {
+      "slug": "mengto-blue-laser-clean-glass-layout",
+      "source": "mengto-Skills-main/agent-skills/web-design/blue-laser-clean-glass-layout"
+    },
+    {
+      "slug": "mengto-book-serif-index",
+      "source": "mengto-Skills-main/agent-skills/web-design/book-serif-index"
+    },
+    {
+      "slug": "mengto-bright-green-tech-system-webgl",
+      "source": "mengto-Skills-main/agent-skills/web-design/bright-green-tech-system-webgl"
+    },
+    {
+      "slug": "mengto-build-awwwards-quality-sites",
+      "source": "mengto-Skills-main/agent-skills/web-design/build-awwwards-quality-sites"
+    },
+    {
+      "slug": "mengto-build-mobile-threejs-games",
+      "source": "mengto-Skills-main/agent-skills/game-development/build-mobile-threejs-games"
+    },
+    {
+      "slug": "mengto-build-threejs-enemy-systems",
+      "source": "mengto-Skills-main/agent-skills/game-development/build-threejs-enemy-systems"
+    },
+    {
+      "slug": "mengto-build-threejs-scroll-worlds",
+      "source": "mengto-Skills-main/agent-skills/web-design/build-threejs-scroll-worlds"
+    },
+    {
+      "slug": "mengto-cinematic-gsap-lenis-motion-system",
+      "source": "mengto-Skills-main/agent-skills/web-design/cinematic-gsap-lenis-motion-system"
+    },
+    {
+      "slug": "mengto-cinematic-scroll-storytelling",
+      "source": "mengto-Skills-main/agent-skills/web-design/cinematic-scroll-storytelling"
+    },
+    {
+      "slug": "mengto-clean-minimal-beige-light-mode",
+      "source": "mengto-Skills-main/agent-skills/web-design/clean-minimal-beige-light-mode"
+    },
+    {
+      "slug": "mengto-cobejs",
+      "source": "mengto-Skills-main/agent-skills/web-design/cobejs"
+    },
+    {
+      "slug": "mengto-company-logos",
+      "source": "mengto-Skills-main/agent-skills/web-design/company-logos"
+    },
+    {
+      "slug": "mengto-container-lines",
+      "source": "mengto-Skills-main/agent-skills/web-design/container-lines"
+    },
+    {
+      "slug": "mengto-corner-diagonals",
+      "source": "mengto-Skills-main/agent-skills/web-design/corner-diagonals"
+    },
+    {
+      "slug": "mengto-corner-lasers",
+      "source": "mengto-Skills-main/agent-skills/web-design/corner-lasers"
+    },
+    {
+      "slug": "mengto-css-alpha-masking",
+      "source": "mengto-Skills-main/agent-skills/web-design/css-alpha-masking"
+    },
+    {
+      "slug": "mengto-css-border-gradient",
+      "source": "mengto-Skills-main/agent-skills/web-design/css-border-gradient"
+    },
+    {
+      "slug": "mengto-daily-ui-inspiration-capture",
+      "source": "mengto-Skills-main/agent-skills/codex/daily-ui-inspiration-capture"
+    },
+    {
+      "slug": "mengto-dark-blue-contrasting-clean",
+      "source": "mengto-Skills-main/agent-skills/web-design/dark-blue-contrasting-clean"
+    },
+    {
+      "slug": "mengto-dark-glass-clean-layout",
+      "source": "mengto-Skills-main/agent-skills/web-design/dark-glass-clean-layout"
+    },
+    {
+      "slug": "mengto-design-first-ui-prompting",
+      "source": "mengto-Skills-main/agent-skills/ui/design-first-ui-prompting"
+    },
+    {
+      "slug": "mengto-dither-background",
+      "source": "mengto-Skills-main/agent-skills/web-design/dither-background"
+    },
+    {
+      "slug": "mengto-dither-laser-dark-mode",
+      "source": "mengto-Skills-main/agent-skills/web-design/dither-laser-dark-mode"
+    },
+    {
+      "slug": "mengto-documentary-brutalist-agency",
+      "source": "mengto-Skills-main/agent-skills/web-design/documentary-brutalist-agency"
+    },
+    {
+      "slug": "mengto-editorial-portfolio-chapters",
+      "source": "mengto-Skills-main/agent-skills/web-design/editorial-portfolio-chapters"
+    },
+    {
+      "slug": "mengto-editorial-service-booking",
+      "source": "mengto-Skills-main/agent-skills/web-design/editorial-service-booking"
+    },
+    {
+      "slug": "mengto-editorial-tech",
+      "source": "mengto-Skills-main/agent-skills/web-design/editorial-tech"
+    },
+    {
+      "slug": "mengto-falling-leaves",
+      "source": "mengto-Skills-main/agent-skills/web-design/falling-leaves"
+    },
+    {
+      "slug": "mengto-framed-grid-layout",
+      "source": "mengto-Skills-main/agent-skills/web-design/framed-grid-layout"
+    },
+    {
+      "slug": "mengto-framed-tech-dark-border-gradient",
+      "source": "mengto-Skills-main/agent-skills/web-design/framed-tech-dark-border-gradient"
+    },
+    {
+      "slug": "mengto-funky-purple-container-tech",
+      "source": "mengto-Skills-main/agent-skills/web-design/funky-purple-container-tech"
+    },
+    {
+      "slug": "mengto-glass-dark-mode-clock",
+      "source": "mengto-Skills-main/agent-skills/web-design/glass-dark-mode-clock"
+    },
+    {
+      "slug": "mengto-glass-dark-ui",
+      "source": "mengto-Skills-main/agent-skills/web-design/glass-dark-ui"
+    },
+    {
+      "slug": "mengto-globe-gl",
+      "source": "mengto-Skills-main/agent-skills/web-design/globe-gl"
+    },
+    {
+      "slug": "mengto-globe-particles",
+      "source": "mengto-Skills-main/agent-skills/web-design/globe-particles"
+    },
+    {
+      "slug": "mengto-gooey-blob-system",
+      "source": "mengto-Skills-main/agent-skills/web-design/gooey-blob-system"
+    },
+    {
+      "slug": "mengto-gsap",
+      "source": "mengto-Skills-main/agent-skills/web-design/gsap"
+    },
+    {
+      "slug": "mengto-gsap-scrolltrigger-storytelling",
+      "source": "mengto-Skills-main/agent-skills/web-design/gsap-scrolltrigger-storytelling"
+    },
+    {
+      "slug": "mengto-high-contrast-skeuomorphic-clean",
+      "source": "mengto-Skills-main/agent-skills/web-design/high-contrast-skeuomorphic-clean"
+    },
+    {
+      "slug": "mengto-image-first-grid-layout",
+      "source": "mengto-Skills-main/agent-skills/web-design/image-first-grid-layout"
+    },
+    {
+      "slug": "mengto-landing-page",
+      "source": "mengto-Skills-main/agent-skills/web-design/landing-page"
+    },
+    {
+      "slug": "mengto-light-mode-paper-technical",
+      "source": "mengto-Skills-main/agent-skills/web-design/light-mode-paper-technical"
+    },
+    {
+      "slug": "mengto-liquid-metal-border",
+      "source": "mengto-Skills-main/agent-skills/web-design/liquid-metal-border"
+    },
+    {
+      "slug": "mengto-marquee-loop",
+      "source": "mengto-Skills-main/agent-skills/web-design/marquee-loop"
+    },
+    {
+      "slug": "mengto-masked-reveal",
+      "source": "mengto-Skills-main/agent-skills/web-design/masked-reveal"
+    },
+    {
+      "slug": "mengto-matterjs",
+      "source": "mengto-Skills-main/agent-skills/web-design/matterjs"
+    },
+    {
+      "slug": "mengto-mesh-gradient-dark-blue-clean",
+      "source": "mengto-Skills-main/agent-skills/web-design/mesh-gradient-dark-blue-clean"
+    },
+    {
+      "slug": "mengto-nested-container-clean-agency",
+      "source": "mengto-Skills-main/agent-skills/web-design/nested-container-clean-agency"
+    },
+    {
+      "slug": "mengto-nested-container-frames",
+      "source": "mengto-Skills-main/agent-skills/web-design/nested-container-frames"
+    },
+    {
+      "slug": "mengto-number-details",
+      "source": "mengto-Skills-main/agent-skills/web-design/number-details"
+    },
+    {
+      "slug": "mengto-operational-enterprise-ai",
+      "source": "mengto-Skills-main/agent-skills/web-design/operational-enterprise-ai"
+    },
+    {
+      "slug": "mengto-optimize-threejs-games",
+      "source": "mengto-Skills-main/agent-skills/game-development/optimize-threejs-games"
+    },
+    {
+      "slug": "mengto-optimize-web-animations",
+      "source": "mengto-Skills-main/agent-skills/codex/optimize-web-animations"
+    },
+    {
+      "slug": "mengto-orange-clean-paper-saas",
+      "source": "mengto-Skills-main/agent-skills/web-design/orange-clean-paper-saas"
+    },
+    {
+      "slug": "mengto-pointer-trail-emitter",
+      "source": "mengto-Skills-main/agent-skills/web-design/pointer-trail-emitter"
+    },
+    {
+      "slug": "mengto-pricing-page",
+      "source": "mengto-Skills-main/agent-skills/web-design/pricing-page"
+    },
+    {
+      "slug": "mengto-product-proof-saas",
+      "source": "mengto-Skills-main/agent-skills/web-design/product-proof-saas"
+    },
+    {
+      "slug": "mengto-progressive-blur",
+      "source": "mengto-Skills-main/agent-skills/web-design/progressive-blur"
+    },
+    {
+      "slug": "mengto-reveal-hover-effect",
+      "source": "mengto-Skills-main/agent-skills/web-design/reveal-hover-effect"
+    },
+    {
+      "slug": "mengto-scroll-progress-timeline",
+      "source": "mengto-Skills-main/agent-skills/web-design/scroll-progress-timeline"
+    },
+    {
+      "slug": "mengto-scroll-scrubbed-visual-sequence",
+      "source": "mengto-Skills-main/agent-skills/web-design/scroll-scrubbed-visual-sequence"
+    },
+    {
+      "slug": "mengto-scroll-scrubbed-word-reveal",
+      "source": "mengto-Skills-main/agent-skills/web-design/scroll-scrubbed-word-reveal"
+    },
+    {
+      "slug": "mengto-scroll-world-storytelling",
+      "source": "mengto-Skills-main/agent-skills/web-design/scroll-world-storytelling"
+    },
+    {
+      "slug": "mengto-shaders-cursor-ripples",
+      "source": "mengto-Skills-main/agent-skills/web-design/shaders-cursor-ripples"
+    },
+    {
+      "slug": "mengto-skeuomorphic-ui",
+      "source": "mengto-Skills-main/agent-skills/web-design/skeuomorphic-ui"
+    },
+    {
+      "slug": "mengto-solar-duotone-bold",
+      "source": "mengto-Skills-main/agent-skills/web-design/solar-duotone-bold"
+    },
+    {
+      "slug": "mengto-split-layout-technical",
+      "source": "mengto-Skills-main/agent-skills/web-design/split-layout-technical"
+    },
+    {
+      "slug": "mengto-staggered-word-reveal",
+      "source": "mengto-Skills-main/agent-skills/web-design/staggered-word-reveal"
+    },
+    {
+      "slug": "mengto-tailwindcss",
+      "source": "mengto-Skills-main/agent-skills/web-design/tailwindcss"
+    },
+    {
+      "slug": "mengto-tech-green-dark-mode-modern",
+      "source": "mengto-Skills-main/agent-skills/web-design/tech-green-dark-mode-modern"
+    },
+    {
+      "slug": "mengto-technical-wireframe-info-layout",
+      "source": "mengto-Skills-main/agent-skills/web-design/technical-wireframe-info-layout"
+    },
+    {
+      "slug": "mengto-thinking-orbs",
+      "source": "mengto-Skills-main/agent-skills/web-design/thinking-orbs"
+    },
+    {
+      "slug": "mengto-threejs",
+      "source": "mengto-Skills-main/agent-skills/web-design/threejs"
+    },
+    {
+      "slug": "mengto-unicorn-studio",
+      "source": "mengto-Skills-main/agent-skills/web-design/unicorn-studio"
+    },
+    {
+      "slug": "mengto-vantajs",
+      "source": "mengto-Skills-main/agent-skills/web-design/vantajs"
+    },
+    {
+      "slug": "mengto-webgl-3d-object",
+      "source": "mengto-Skills-main/agent-skills/web-design/webgl-3d-object"
+    },
+    {
+      "slug": "mengto-webgl-landing-steering",
+      "source": "mengto-Skills-main/agent-skills/web-design/webgl-landing-steering"
+    },
+    {
+      "slug": "mengto-webgl-laser",
+      "source": "mengto-Skills-main/agent-skills/web-design/webgl-laser"
+    },
+    {
+      "slug": "mkt-copywriting",
+      "source": "marketingskills-main/skills/copywriting"
+    },
+    {
+      "slug": "mkt-cro",
+      "source": "marketingskills-main/skills/cro"
+    },
+    {
+      "slug": "mkt-onboarding",
+      "source": "marketingskills-main/skills/onboarding"
+    },
+    {
+      "slug": "mkt-paywalls",
+      "source": "marketingskills-main/skills/paywalls"
+    },
+    {
+      "slug": "mkt-popups",
+      "source": "marketingskills-main/skills/popups"
+    },
+    {
+      "slug": "mkt-signup",
+      "source": "marketingskills-main/skills/signup"
+    },
+    {
+      "slug": "real-user-qa",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/real-user-qa"
+    },
+    {
+      "slug": "sample-agents-accessibility-compliance",
+      "source": "agents-main/plugins/ui-design/skills/accessibility-compliance"
+    },
+    {
+      "slug": "sample-agents-design-system-patterns",
+      "source": "agents-main/plugins/ui-design/skills/design-system-patterns"
+    },
+    {
+      "slug": "sample-agents-interaction-design",
+      "source": "agents-main/plugins/ui-design/skills/interaction-design"
+    },
+    {
+      "slug": "sample-agents-mobile-android-design",
+      "source": "agents-main/plugins/ui-design/skills/mobile-android-design"
+    },
+    {
+      "slug": "sample-agents-mobile-ios-design",
+      "source": "agents-main/plugins/ui-design/skills/mobile-ios-design"
+    },
+    {
+      "slug": "sample-agents-react-native-design",
+      "source": "agents-main/plugins/ui-design/skills/react-native-design"
+    },
+    {
+      "slug": "sample-agents-responsive-design",
+      "source": "agents-main/plugins/ui-design/skills/responsive-design"
+    },
+    {
+      "slug": "sample-agents-screen-reader-testing",
+      "source": "agents-main/plugins/accessibility-compliance/skills/screen-reader-testing"
+    },
+    {
+      "slug": "sample-agents-tailwind-design-system",
+      "source": "agents-main/plugins/frontend-mobile-development/skills/tailwind-design-system"
+    },
+    {
+      "slug": "sample-agents-visual-design-foundations",
+      "source": "agents-main/plugins/ui-design/skills/visual-design-foundations"
+    },
+    {
+      "slug": "sample-agents-wcag-audit-patterns",
+      "source": "agents-main/plugins/accessibility-compliance/skills/wcag-audit-patterns"
+    },
+    {
+      "slug": "sample-agents-web-component-design",
+      "source": "agents-main/plugins/ui-design/skills/web-component-design"
+    },
+    {
+      "slug": "sample-awesome-penpot-uiux-design",
+      "source": "awesome-copilot-main/skills/penpot-uiux-design"
+    },
+    {
+      "slug": "sample-awesome-premium-frontend-ui",
+      "source": "awesome-copilot-main/skills/premium-frontend-ui"
+    },
+    {
+      "slug": "sample-awesome-web-design-reviewer",
+      "source": "awesome-copilot-main/skills/web-design-reviewer"
+    },
+    {
+      "slug": "threejs-animation",
+      "source": "threejs-skills-main/skills/threejs-animation"
+    },
+    {
+      "slug": "threejs-fundamentals",
+      "source": "threejs-skills-main/skills/threejs-fundamentals"
+    },
+    {
+      "slug": "threejs-geometry",
+      "source": "threejs-skills-main/skills/threejs-geometry"
+    },
+    {
+      "slug": "threejs-interaction",
+      "source": "threejs-skills-main/skills/threejs-interaction"
+    },
+    {
+      "slug": "threejs-lighting",
+      "source": "threejs-skills-main/skills/threejs-lighting"
+    },
+    {
+      "slug": "threejs-loaders",
+      "source": "threejs-skills-main/skills/threejs-loaders"
+    },
+    {
+      "slug": "threejs-materials",
+      "source": "threejs-skills-main/skills/threejs-materials"
+    },
+    {
+      "slug": "threejs-postprocessing",
+      "source": "threejs-skills-main/skills/threejs-postprocessing"
+    },
+    {
+      "slug": "threejs-shaders",
+      "source": "threejs-skills-main/skills/threejs-shaders"
+    },
+    {
+      "slug": "threejs-textures",
+      "source": "threejs-skills-main/skills/threejs-textures"
+    },
+    {
+      "slug": "tui-observe-first",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/tui-observe-first"
+    },
+    {
+      "slug": "ui-fix-observe-first",
+      "source": "$ULTIMATE_UI_SOURCE_ROOT/ui-fix-observe-first"
+    },
+    {
+      "slug": "uupm-banner-design",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/banner-design"
+    },
+    {
+      "slug": "uupm-brand",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/brand"
+    },
+    {
+      "slug": "uupm-core",
+      "source": "ui-ux-pro-max-skill-main/src/ui-ux-pro-max"
+    },
+    {
+      "slug": "uupm-design",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/design"
+    },
+    {
+      "slug": "uupm-design-system",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/design-system"
+    },
+    {
+      "slug": "uupm-slides",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/slides"
+    },
+    {
+      "slug": "uupm-ui-styling",
+      "source": "ui-ux-pro-max-skill-main/cli/assets/skills/ui-styling"
+    },
+    {
+      "slug": "uupm-ui-ux-pro-max",
+      "source": "ui-ux-pro-max-skill-main/.claude/skills/ui-ux-pro-max"
+    }
+  ],
+  "skipped": [
+    "slug-collision-skip:uupm-banner-design:ui-ux-pro-max-skill-main/.claude/skills/banner-design",
+    "slug-collision-skip:uupm-brand:ui-ux-pro-max-skill-main/.claude/skills/brand",
+    "slug-collision-skip:uupm-design:ui-ux-pro-max-skill-main/.claude/skills/design",
+    "slug-collision-skip:uupm-design-system:ui-ux-pro-max-skill-main/.claude/skills/design-system",
+    "slug-collision-skip:uupm-slides:ui-ux-pro-max-skill-main/.claude/skills/slides",
+    "slug-collision-skip:uupm-ui-styling:ui-ux-pro-max-skill-main/.claude/skills/ui-styling",
+    "marketingskills:ab-testing",
+    "marketingskills:ad-creative",
+    "marketingskills:ads",
+    "marketingskills:ai-seo",
+    "marketingskills:analytics",
+    "marketingskills:aso",
+    "marketingskills:attribution",
+    "marketingskills:churn-prevention",
+    "marketingskills:co-marketing",
+    "marketingskills:cold-email",
+    "marketingskills:community-marketing",
+    "marketingskills:competitor-profiling",
+    "marketingskills:competitors",
+    "marketingskills:content-strategy",
+    "marketingskills:copy-editing",
+    "marketingskills:customer-research",
+    "marketingskills:directory-submissions",
+    "marketingskills:emails",
+    "marketingskills:free-tools",
+    "marketingskills:image",
+    "marketingskills:influencer-marketing",
+    "marketingskills:launch",
+    "marketingskills:lead-magnets",
+    "marketingskills:marketing-council",
+    "marketingskills:marketing-ideas",
+    "marketingskills:marketing-loops",
+    "marketingskills:marketing-plan",
+    "marketingskills:marketing-psychology",
+    "marketingskills:offers",
+    "marketingskills:pricing",
+    "marketingskills:product-marketing",
+    "marketingskills:programmatic-seo",
+    "marketingskills:prospecting",
+    "marketingskills:public-relations",
+    "marketingskills:referrals",
+    "marketingskills:revops",
+    "marketingskills:sales-enablement",
+    "marketingskills:schema",
+    "marketingskills:seo-audit",
+    "marketingskills:site-architecture",
+    "marketingskills:sms",
+    "marketingskills:social",
+    "marketingskills:video",
+    "agents-main:rule-b-exclude:nextjs-app-router-patterns",
+    "agents-main:rule-b-exclude:react-native-architecture",
+    "agents-main:rule-b-exclude:react-state-management",
+    "claude-code-templates-main:SKIP product/CLI bulk",
+    "community-resources-main:index only \u2014 link in ATTRIBUTION",
+    "awesome-copilot-main:marketplace bulk skipped except UI samples",
+    "agents-main:marketplace bulk skipped except UI samples",
+    "replaced-removed:ux-ai-governors",
+    "replaced-removed:ux-ai-trust-builders",
+    "replaced-removed:ux-ai-wayfinders"
+  ],
+  "skill_count": 141
+}

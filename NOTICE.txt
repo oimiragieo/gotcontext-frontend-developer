@@ -1,0 +1,6 @@
+Gotcontext Frontend Developer redistributes curated upstream agent skills.
+
+- Root LICENSE (MIT © 2026 gotcontext.ai): adapters, pack docs, and gotcontext-authored skills only.
+- Upstream skill bodies: see ATTRIBUTION.md and LICENSES/upstream/ (do not assume MIT).
+- Held-back unlicensed upstream: LICENSES/HELD_BACK.md.
+- Cinematic skill: MIT © 2026 gotcontext.ai (also skills/cinematic-3d-website/LICENSE).

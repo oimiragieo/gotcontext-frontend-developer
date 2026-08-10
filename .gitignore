@@ -1,0 +1,63 @@
+# Gotcontext Frontend Developer — local / generated ignore
+
+# --- Python ---
+.venv/
+.venv-*/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Node (if you exercise skill demos locally) ---
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.turbo/
+.next/
+out/
+dist/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Secrets / local env ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+**/secrets/
+OPENROUTER_API_KEY*
+
+# --- Local / ephemeral ---
+*.tmp
+*.bak
+*.log
+.cache/
+_thinktank*/
+out/
+tmp/
+temp/
+
+# --- Generated asset scratch from cinematic pipeline ---
+**/out/
+**/frames/
+**/depths/
+*.lanczos-upscale*
