@@ -27,9 +27,9 @@ Unified design skill: brand, tokens, UI, logo, CIP, slides, banners, social phot
 
 | Task | Sub-skill | Details |
 |------|-----------|---------|
-| Brand identity, voice, assets | `brand` | External skill |
-| Tokens, specs, CSS vars | `design-system` | External skill |
-| shadcn/ui, Tailwind, code | `ui-styling` | External skill |
+| Brand identity, voice, assets | `uupm-brand` | In-pack skill |
+| Tokens, specs, CSS vars | `uupm-design-system` | In-pack skill |
+| shadcn/ui, Tailwind, code | `uupm-ui-styling` | In-pack skill |
 | Logo creation, AI generation | Logo (built-in) | `references/logo-design.md` |
 | CIP mockups, deliverables | CIP (built-in) | `references/cip-design.md` |
 | Presentations, pitch decks | Slides (built-in) | `references/slides.md` |
