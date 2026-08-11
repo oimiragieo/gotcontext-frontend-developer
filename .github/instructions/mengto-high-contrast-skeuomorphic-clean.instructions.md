@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-high-contrast-skeuomorphic-clean
+description: "Create a high-contrast clean skeuomorphic design system with molded dark surfaces, crisp light separation, tactile inset depth, and restrained signal accents."
+applyTo: "**/*"
 ---
 
 # mengto-high-contrast-skeuomorphic-clean

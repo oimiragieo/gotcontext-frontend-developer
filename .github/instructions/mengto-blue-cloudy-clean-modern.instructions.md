@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-blue-cloudy-clean-modern
+description: "Create a clean modern design system with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography."
+applyTo: "**/*"
 ---
 
 # mengto-blue-cloudy-clean-modern

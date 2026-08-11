@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-glass-dark-mode-clock
+description: "Create a dark glass design system with frosted shells, soft beam grids, circular clock-like calibration dials, and precise sci-fi instrument framing."
+applyTo: "**/*"
 ---
 
 # mengto-glass-dark-mode-clock

@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — uupm-core
+description: "UI UX Pro Max design intelligence (imported core scripts)"
+applyTo: "**/*"
 ---
 
 # uupm-core

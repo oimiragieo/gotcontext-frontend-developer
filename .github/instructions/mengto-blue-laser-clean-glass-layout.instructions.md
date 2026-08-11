@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-blue-laser-clean-glass-layout
+description: "Create a clean dark glass layout system with a thin blue laser atmosphere, frosted premium shells, and polished dashboard structure."
+applyTo: "**/*"
 ---
 
 # mengto-blue-laser-clean-glass-layout

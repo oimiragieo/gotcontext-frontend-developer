@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — sample-awesome-premium-frontend-ui
+description: "A comprehensive guide for GitHub Copilot to craft immersive, high-performance web experiences with advanced motion, typography, and architectural craftsmanship."
+applyTo: "**/*"
 ---
 
 # sample-awesome-premium-frontend-ui

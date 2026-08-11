@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-number-details
+description: "Add decorative 01, 02, 03 numeric detail markers."
+applyTo: "**/*"
 ---
 
 # mengto-number-details

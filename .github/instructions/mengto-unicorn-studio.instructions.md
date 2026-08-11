@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-unicorn-studio
+description: "Use when embedding and customizing Unicorn Studio interactive animations on the web (embed, responsive sizing, performance, layering with UI, fallbacks)."
+applyTo: "**/*"
 ---
 
 # mengto-unicorn-studio

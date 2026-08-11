@@ -1,6 +1,6 @@
 ---
 name: stitch-manage-design-system
-description: Adapter pointer to canonical skills/stitch-manage-design-system for Claude Code
+description: "Manage design systems in Stitch using MCP tools. Includes retrieval of assets, creating/updating design systems in Stitch, and applying them to screens."
 ---
 
 # stitch-manage-design-system (Claude Code adapter)

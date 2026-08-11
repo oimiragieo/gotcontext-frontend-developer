@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — sample-agents-react-native-design
+description: "Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native apps, implementing navigation patterns, or creating performant animations."
+applyTo: "**/*"
 ---
 
 # sample-agents-react-native-design

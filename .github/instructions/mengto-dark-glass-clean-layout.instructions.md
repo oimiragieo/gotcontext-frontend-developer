@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-dark-glass-clean-layout
+description: "Create a dark glass layout system with frosted premium shells, clean multi-column workspace structure, floating data cards, and restrained atmospheric depth."
+applyTo: "**/*"
 ---
 
 # mengto-dark-glass-clean-layout

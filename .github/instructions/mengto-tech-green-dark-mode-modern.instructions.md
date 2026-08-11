@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-tech-green-dark-mode-modern
+description: "Create a modern dark-mode technical design system with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow."
+applyTo: "**/*"
 ---
 
 # mengto-tech-green-dark-mode-modern

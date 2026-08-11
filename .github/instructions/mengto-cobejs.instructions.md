@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-cobejs
+description: "Use when adding a lightweight interactive globe with cobe (canvas setup, markers, interaction, performance, integration with React/Next.js)."
+applyTo: "**/*"
 ---
 
 # mengto-cobejs

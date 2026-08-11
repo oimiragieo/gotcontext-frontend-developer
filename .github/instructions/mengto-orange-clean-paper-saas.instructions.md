@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-orange-clean-paper-saas
+description: "Create a clean paper-toned SaaS design system with warm neutrals, orange accent signals, rounded premium forms, and polished product illustration surfaces."
+applyTo: "**/*"
 ---
 
 # mengto-orange-clean-paper-saas

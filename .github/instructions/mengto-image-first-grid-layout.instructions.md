@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-image-first-grid-layout
+description: "Create an image-led grid design system with full-bleed photography, structural guide lines, anchored content blocks, and restrained technical overlays."
+applyTo: "**/*"
 ---
 
 # mengto-image-first-grid-layout

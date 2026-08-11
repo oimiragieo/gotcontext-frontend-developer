@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-dark-blue-contrasting-clean
+description: "Create a dark-blue clean design system with strong contrast, cobalt gradient feature blocks, crisp framed structure, and restrained premium glow."
+applyTo: "**/*"
 ---
 
 # mengto-dark-blue-contrasting-clean

@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-background-grid-webgl
+description: "Create a perspective WebGL background grid with fading lines, subtle particle haze, slow forward drift, and gentle camera parallax."
+applyTo: "**/*"
 ---
 
 # mengto-background-grid-webgl

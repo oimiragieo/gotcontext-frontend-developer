@@ -1,6 +1,6 @@
 ---
 name: stitch-remotion
-description: Adapter pointer to canonical skills/stitch-remotion for Claude Code
+description: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
 ---
 
 # stitch-remotion (Claude Code adapter)

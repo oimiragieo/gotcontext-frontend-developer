@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-dither-laser-dark-mode
+description: "Create a dark premium design system that combines near-black surfaces, subtle ordered-dither texture, and a thin accent-colored laser atmosphere."
+applyTo: "**/*"
 ---
 
 # mengto-dither-laser-dark-mode

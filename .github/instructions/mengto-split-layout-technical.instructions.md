@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-split-layout-technical
+description: "Create a technical split-screen design system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and premium inset surfaces."
+applyTo: "**/*"
 ---
 
 # mengto-split-layout-technical

@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — stitch-loop
+description: "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
+applyTo: "**/*"
 ---
 
 # stitch-loop

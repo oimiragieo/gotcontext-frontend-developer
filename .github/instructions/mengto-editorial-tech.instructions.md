@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-editorial-tech
+description: "Blend editorial magazine composition with precision product-tech detailing using asymmetrical grids, cinematic media bands, mono utility labels, and restrained accent color."
+applyTo: "**/*"
 ---
 
 # mengto-editorial-tech

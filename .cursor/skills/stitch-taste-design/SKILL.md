@@ -1,6 +1,6 @@
 ---
 name: stitch-taste-design
-description: Adapter pointer to canonical skills/stitch-taste-design for Cursor
+description: "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards \u2014 strict typography, calibrated color, asymmetric layouts, perpetual micro-motion, and hardware-accelerated performance."
 ---
 
 # stitch-taste-design (Cursor adapter)

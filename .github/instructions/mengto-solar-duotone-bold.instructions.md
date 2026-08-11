@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-solar-duotone-bold
+description: "Use Iconify Solar Duotone Bold icon style."
+applyTo: "**/*"
 ---
 
 # mengto-solar-duotone-bold

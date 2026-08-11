@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — ai-wayfinders
+description: "Use when designing AI product first-run or blank-slate UX \u2014 chat empty state, example prompts, capability discovery, templates, nudges, or follow-ups. Trigger on \"users don't know what to ask\", onboarding, suggestion chips, or discoverability."
+applyTo: "**/*"
 ---
 
 # ai-wayfinders

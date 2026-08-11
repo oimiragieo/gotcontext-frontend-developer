@@ -1,6 +1,6 @@
 ---
 name: stitch-design-md
-description: Adapter pointer to canonical skills/stitch-design-md for Cursor
+description: "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
 ---
 
 # stitch-design-md (Cursor adapter)

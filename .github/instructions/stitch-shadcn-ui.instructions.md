@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — stitch-shadcn-ui
+description: "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, and best practices."
+applyTo: "**/*"
 ---
 
 # stitch-shadcn-ui

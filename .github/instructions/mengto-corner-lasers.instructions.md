@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-corner-lasers
+description: "Create a corner-anchored laser composition with thin beams, a bright emitter node, bloom, and atmospheric glow or fog."
+applyTo: "**/*"
 ---
 
 # mengto-corner-lasers

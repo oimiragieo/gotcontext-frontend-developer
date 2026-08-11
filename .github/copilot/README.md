@@ -1,5 +1,8 @@
 # GitHub Copilot adapters
 
+Live Copilot pointers are `.github/instructions/*.instructions.md` (with `applyTo`),
+plus canonical skills under `skills/`. This README indexes those canonical files.
+
 Canonical skills live in `/skills`. Instruction pointers:
 
 - [ai-governors](../../skills/ai-governors/SKILL.md)

@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — stitch-design-md
+description: "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
+applyTo: "**/*"
 ---
 
 # stitch-design-md

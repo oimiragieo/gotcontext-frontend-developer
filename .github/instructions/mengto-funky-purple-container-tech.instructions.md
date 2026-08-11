@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-funky-purple-container-tech
+description: "Create a dark container-led technical design system with fuchsia-purple accents, layered rounded shells, crisp frame lines, and playful futuristic focal objects."
+applyTo: "**/*"
 ---
 
 # mengto-funky-purple-container-tech

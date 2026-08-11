@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-company-logos
+description: "Use Iconify Simple Icons logos (64x64) instead of text logos."
+applyTo: "**/*"
 ---
 
 # mengto-company-logos
