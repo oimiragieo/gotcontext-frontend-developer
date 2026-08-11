@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Generate pointer-only harness adapters from skills/ inventory."""
+
 from __future__ import annotations
 
 import json
@@ -61,7 +62,7 @@ def github_instructions(slug: str) -> str:
     return (
         f"---\n"
         f"description: {desc}\n"
-        f"applyTo: \"**/*\"\n"
+        f'applyTo: "**/*"\n'
         f"---\n\n"
         f"# {slug}\n\n"
         f"Apply the canonical skill: "
@@ -72,7 +73,10 @@ def github_instructions(slug: str) -> str:
 def main() -> None:
     slugs = skill_slugs()
     for slug in slugs:
-        write(ROOT / ".claude" / "skills" / slug / "SKILL.md", adapter(slug, "Claude Code"))
+        write(
+            ROOT / ".claude" / "skills" / slug / "SKILL.md",
+            adapter(slug, "Claude Code"),
+        )
         write(ROOT / ".cursor" / "skills" / slug / "SKILL.md", adapter(slug, "Cursor"))
         write(
             ROOT / ".github" / "instructions" / f"{slug}.instructions.md",

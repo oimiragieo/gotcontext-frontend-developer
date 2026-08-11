@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Pack quality gates for gotcontext-frontend-developer."""
+
 from __future__ import annotations
 
 import json
@@ -21,26 +22,10 @@ MANIFEST = ROOT / "manifest.json"
 STALE_COPILOT = ROOT / ".github" / "copilot" / "instructions"
 
 # Migration remaps for short upstream / sibling names → in-pack slugs.
-# After Task 4, callers should require real dirs only (empty this table).
-SKILL_LINK_REMAP: dict[str, str] = {
-    "ui-ux-pro-max": "uupm-ui-ux-pro-max",
-    "brand": "uupm-brand",
-    "design": "uupm-design",
-    "design-system": "uupm-design-system",
-    "banner-design": "uupm-banner-design",
-    "ui-styling": "uupm-ui-styling",
-    "extract-static-html": "stitch-extract-static-html",
-    "extract-design-md": "stitch-extract-design-md",
-    "upload-to-stitch": "stitch-upload-to-stitch",
-    "design-md": "stitch-design-md",
-    "code-to-design": "stitch-code-to-design",
-    "mcp-design": "stitch-mcp-design",
-    "manage-design-system": "stitch-manage-design-system",
-    "shadcn-ui": "stitch-shadcn-ui",
-    "react-components": "stitch-react-components",
-    "react-native": "stitch-react-native",
-    "remotion": "stitch-remotion",
-}
+# Emptied after Task 4 landed: zero links rely on remaps (verified 2026-08-10),
+# and a populated table would let a future unprefixed link pass this gate
+# while 404ing for readers. Add entries only during an active migration.
+SKILL_LINK_REMAP: dict[str, str] = {}
 
 # Skill-shaped markdown links: ../<slug>/… or skills/<slug>/…
 REL_LINK_RE = re.compile(
@@ -57,11 +42,7 @@ _failures: list[str] = []
 
 
 def skill_slugs() -> list[str]:
-    return sorted(
-        p.parent.name
-        for p in SKILLS.glob("*/SKILL.md")
-        if p.is_file()
-    )
+    return sorted(p.parent.name for p in SKILLS.glob("*/SKILL.md") if p.is_file())
 
 
 def record(check: str, msg: str) -> None:
@@ -111,7 +92,11 @@ def check_yaml_frontmatter() -> None:
         except Exception as e:  # noqa: BLE001
             record(name, f"YAML parse {p.relative_to(ROOT)}: {e}")
             continue
-        if not isinstance(data, dict) or "name" not in data or "description" not in data:
+        if (
+            not isinstance(data, dict)
+            or "name" not in data
+            or "description" not in data
+        ):
             record(name, f"name/description required: {p.relative_to(ROOT)}")
 
 
@@ -148,7 +133,10 @@ def check_forbidden_paths() -> None:
             if pat.search(text):
                 bad.append(f"{p.relative_to(ROOT)} matches {pat.pattern}")
     if bad:
-        record(name, "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""))
+        record(
+            name,
+            "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""),
+        )
 
 
 def check_fence_balance() -> None:
@@ -164,7 +152,10 @@ def check_fence_balance() -> None:
                 # Pointer-only adapters should have 0 code fences.
                 bad.append(f"{p.relative_to(ROOT)} fence count={count} (want 0)")
     if bad:
-        record(name, "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""))
+        record(
+            name,
+            "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""),
+        )
 
 
 def check_manifest_sync() -> None:
@@ -174,7 +165,9 @@ def check_manifest_sync() -> None:
         return
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     included = data.get("included") or []
-    manifest_slugs = {item["slug"] for item in included if isinstance(item, dict) and "slug" in item}
+    manifest_slugs = {
+        item["slug"] for item in included if isinstance(item, dict) and "slug" in item
+    }
     disk = set(skill_slugs())
     missing = sorted(disk - manifest_slugs)
     orphan = sorted(manifest_slugs - disk)
@@ -297,13 +290,19 @@ def check_relative_skill_links() -> None:
             if _resolve_skill_slug(slug) is None:
                 bad.append(f"{p.relative_to(ROOT)} -> {href}")
     if bad:
-        record(name, "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""))
+        record(
+            name,
+            "; ".join(bad[:5]) + (f" (+{len(bad) - 5} more)" if len(bad) > 5 else ""),
+        )
 
 
 def check_no_stale_copilot_tree() -> None:
     name = "no_stale_copilot_tree"
     if STALE_COPILOT.exists():
-        record(name, f"{STALE_COPILOT.relative_to(ROOT)} exists (delete; keep README index only)")
+        record(
+            name,
+            f"{STALE_COPILOT.relative_to(ROOT)} exists (delete; keep README index only)",
+        )
 
 
 def main() -> None:
