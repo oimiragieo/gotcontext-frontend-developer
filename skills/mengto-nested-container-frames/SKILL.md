@@ -1,6 +1,6 @@
 ---
 name: mengto-nested-container-frames
-description: "Create a container-in-container layout system using nested frames. Use an outer centered container with visible vertical boundary lines and corner markers. Inside, place inner containers inset from the edges, each with its own background and rounded frame. Technique: outer container defines global bounds, inner containers use padding to create inset spacing, layered frames (border + background) to separate levels, and consistent spacing between outer frame and inner blocks."
+description: "Use when implementing a container-in-container layout with an outer centered frame (vertical boundary lines, corner markers) and inset inner containers with their own backgrounds and rounded frames. Prefer this over mengto-nested-container-clean-agency when the technique is structural nested frames, not a full agency visual system."
 ---
 
 # Nested Container Frames Skill

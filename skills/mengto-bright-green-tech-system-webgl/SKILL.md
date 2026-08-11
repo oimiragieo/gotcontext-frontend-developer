@@ -1,6 +1,6 @@
 ---
 name: mengto-bright-green-tech-system-webgl
-description: "Create a bright-green technical design system with structured split layouts, hard-framed dark surfaces, mono utility labels, and a prominent WebGL visualization zone."
+description: "Use when building a bright-green technical UI with structured split layouts, hard-framed dark surfaces, mono utility labels, and a prominent WebGL visualization zone. Prefer this over mengto-tech-green-dark-mode-modern when a large WebGL viz panel is central, not just emerald signal accents."
 ---
 
 # Bright Green Tech System WebGL Skill

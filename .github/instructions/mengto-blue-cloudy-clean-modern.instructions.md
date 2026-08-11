@@ -1,5 +1,5 @@
 ---
-description: "Create a clean modern design system with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography."
+description: "Use when designing a clean modern light UI with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography. Prefer this over mengto-clean-minimal-beige-light-mode when sky/cloud blue is the mood, not warm beige paper."
 applyTo: "**/*"
 ---
 

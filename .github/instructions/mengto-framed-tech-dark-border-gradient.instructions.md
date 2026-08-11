@@ -1,5 +1,5 @@
 ---
-description: "Create a framed dark technical design system with border-gradient shells, asymmetrical grid panels, mono utility labeling, and restrained monochrome atmosphere."
+description: "Use when building a framed dark technical system with border-gradient shells, asymmetrical grid panels, mono utility labeling, and restrained monochrome atmosphere. Prefer this over mengto-dark-glass-clean-layout when gradient borders and tech frames lead, not frosted glass workspace shells; prefer over mengto-glass-dark-ui when the whole framed layout system is in scope, not isolated glass cards."
 applyTo: "**/*"
 ---
 

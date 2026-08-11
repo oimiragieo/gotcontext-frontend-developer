@@ -1,5 +1,5 @@
 ---
-description: "Create a technical split-screen design system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and premium inset surfaces."
+description: "Use when designing a technical split-screen system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and premium inset surfaces. Prefer this over mengto-bright-green-tech-system-webgl when dual-panel split framing leads without a bright-green WebGL viz mandate."
 applyTo: "**/*"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: mengto-agency-grid-layout-minimal
-description: "Create a minimal agency design system with a disciplined editorial grid, oversized typography, quiet uppercase utility labels, restrained image blocks, and subtle structural detail."
+description: "Use when building a minimal agency site with a disciplined editorial grid, oversized typography, quiet uppercase utility labels, restrained image blocks, and subtle structural detail. Prefer this over mengto-nested-container-clean-agency when the grid and type lead, not nested shells."
 ---
 
 # Agency Grid Layout Minimal Skill

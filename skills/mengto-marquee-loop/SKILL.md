@@ -1,6 +1,6 @@
 ---
 name: mengto-marquee-loop
-description: "Apply seamless infinite marquee loops using duplicated items."
+description: "Use when applying seamless infinite marquee loops with duplicated items for logo strips, tickers, or continuous horizontal content."
 ---
 
 # Marquee Skill

@@ -1,6 +1,6 @@
 ---
 name: mengto-funky-purple-container-tech
-description: "Create a dark container-led technical design system with fuchsia-purple accents, layered rounded shells, crisp frame lines, and playful futuristic focal objects."
+description: "Use when designing a dark container-led technical UI with fuchsia-purple accents, layered rounded shells, crisp frame lines, and playful futuristic focal objects. Prefer this over mengto-nested-container-frames when fuchsia-purple tech playfulness leads, not neutral nested frame technique alone."
 ---
 
 # Funky Purple Container Tech Skill

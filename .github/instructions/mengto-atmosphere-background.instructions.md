@@ -1,5 +1,5 @@
 ---
-description: "Create a dark atmospheric background with drifting vertical light folds, screen-blended glow, and a concentrated luminous corner or lower-edge bloom."
+description: "Use when you need a dark atmospheric background with drifting vertical light folds, screen-blended glow, and a concentrated luminous corner or lower-edge bloom \u2014 background atmosphere only, not a full layout system."
 applyTo: "**/*"
 ---
 

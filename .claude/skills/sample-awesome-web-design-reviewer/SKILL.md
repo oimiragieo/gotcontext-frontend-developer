@@ -1,6 +1,6 @@
 ---
 name: sample-awesome-web-design-reviewer
-description: "This skill enables visual inspection of websites running locally or remotely to identify and fix design issues. Triggers on requests like \"review website design\", \"check the UI\", \"fix the layout\", \"find design problems\". Detects issues with responsive design, accessibility, visual consistency, and layout breakage, then performs fixes at the source code level."
+description: "Use when asked to review website design, check the UI, fix the layout, or find design problems on a local or remote site \u2014 visual inspection for responsive, accessibility, consistency, and layout breakage with source-level fixes."
 ---
 
 # sample-awesome-web-design-reviewer (Claude Code adapter)

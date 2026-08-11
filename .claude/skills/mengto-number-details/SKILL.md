@@ -1,6 +1,6 @@
 ---
 name: mengto-number-details
-description: "Add decorative 01, 02, 03 numeric detail markers."
+description: "Use when adding decorative 01, 02, 03 numeric detail markers for section indexing or editorial rhythm."
 ---
 
 # mengto-number-details (Claude Code adapter)

@@ -1,5 +1,5 @@
 ---
-description: "Create a monochrome technical wireframe design system with exploded 3D structure, connector annotations, sparse information labels, and precise dark diagnostic framing."
+description: "Use when designing a monochrome technical wireframe system with exploded 3D structure, connector annotations, sparse information labels, and precise dark diagnostic framing."
 applyTo: "**/*"
 ---
 

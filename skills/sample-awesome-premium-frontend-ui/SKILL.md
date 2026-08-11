@@ -1,6 +1,6 @@
 ---
 name: sample-awesome-premium-frontend-ui
-description: 'A comprehensive guide for GitHub Copilot to craft immersive, high-performance web experiences with advanced motion, typography, and architectural craftsmanship.'
+description: "Use when crafting immersive, high-performance premium frontend experiences with advanced motion, typography, and architectural craftsmanship (Copilot/agent guidance for polished UI systems)."
 metadata:
   author: 'Utkarsh Patrikar'
   author_url: 'https://github.com/utkarsh232005'

@@ -1,6 +1,6 @@
 ---
 name: mengto-solar-duotone-bold
-description: "Use Iconify Solar Duotone Bold icon style."
+description: "Use when applying Iconify Solar Duotone Bold icons for UI chrome. Prefer this over mengto-company-logos when you need interface icons, not brand/company Simple Icons logos."
 ---
 
 # Solar Duotone Bold Skill
