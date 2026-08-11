@@ -47,3 +47,5 @@ Full design-path matrix and intent shortcuts: [AGENTS.md](AGENTS.md) § Skill ro
 ## Agent entry
 
 [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md) · `manifest.json` / `provenance.json`
+
+Pack freshness (GSAP / Three.js / Motion CWV): [AGENTS.md](AGENTS.md) § Pack errata.

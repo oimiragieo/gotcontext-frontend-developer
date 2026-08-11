@@ -49,3 +49,10 @@ Do **not** use Stitch generate tools for Aura URL-clones or Figma-SoT work.
 | Frontend/UI audit | `frontend-audit` |
 | Design system from brief | `uupm-ui-ux-pro-max` |
 | Cinematic 3D brand experience | `cinematic-3d-website` |
+
+## Pack errata (freshness)
+
+- **GSAP:** All GSAP plugins are free since 3.13 (Apr 2025). Do not avoid GSAP due to legacy “Club” licensing warnings in older skill text.
+- **Three.js:** For new work, use current stable Three.js — do not pin r128. Demo `source.json` pins are historical captures; do not copy those versions.
+- **Motion:** Prefer `import { motion } from "motion/react"` over `framer-motion`.
+- **Motion CWV guard:** Reserve layout space before scroll-reveal (CLS). Prefer CSS `animation-timeline: view()` when it meets the brief. View Transitions can charge INP — measure. JS animation libraries are not CWV-free by default.
