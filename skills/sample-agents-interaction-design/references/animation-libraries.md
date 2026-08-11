@@ -7,7 +7,7 @@ The most popular React animation library with declarative API.
 ### Basic Animations
 
 ```tsx
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 
 // Simple animation
 function FadeIn({ children }) {
@@ -61,7 +61,7 @@ function PulseButton() {
 ### Layout Animations
 
 ```tsx
-import { motion, LayoutGroup } from "framer-motion";
+import { motion, LayoutGroup } from "motion/react";
 
 // Shared layout animation
 function TabIndicator({ activeTab, tabs }) {
@@ -145,7 +145,7 @@ function StaggeredList({ items }) {
 ### Page Transitions
 
 ```tsx
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/router";
 
 const pageVariants = {

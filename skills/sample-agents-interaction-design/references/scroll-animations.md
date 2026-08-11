@@ -61,7 +61,7 @@ function FadeInSection({ children }) {
 ## Scroll Progress Indicator
 
 ```tsx
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "motion/react";
 
 function ScrollProgress() {
   const { scrollYProgress } = useScroll();
@@ -104,7 +104,7 @@ function ScrollProgress() {
 ### Framer Motion Parallax
 
 ```tsx
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
 function ParallaxHero() {
   const ref = useRef(null);

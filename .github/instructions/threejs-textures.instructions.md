@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — threejs-textures
+description: "Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization."
+applyTo: "**/*"
 ---
 
 # threejs-textures

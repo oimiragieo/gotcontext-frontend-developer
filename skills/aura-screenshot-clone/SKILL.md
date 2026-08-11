@@ -1,6 +1,6 @@
 ---
 name: aura-screenshot-clone
-description: "Use when the user wants to clone or adapt a UI pattern from any website into gotcontext.ai, or asks to \"build something like X\", \"make our nav look like Y\", or \"clone that component\". Requires an aura.build Pro subscription. Aura's clone is now NATIVE — paste a URL or drag a screenshot into aura.build and it generates React/Tailwind directly; the Anima/Chrome-extension flow is only a fallback for login-gated pages Aura can't fetch server-side."
+description: "Use when the user wants to clone or adapt a UI pattern from any website into gotcontext.ai, or asks to \"build something like X\", \"make our nav look like Y\", or \"clone that component\". Prefer aura.build Pro when available; without a Pro subscription, skip Aura and go straight to Phase 2.5 direct rebuild. Aura's clone is now NATIVE — paste a URL or drag a screenshot into aura.build and it generates React/Tailwind directly; the Anima/Chrome-extension flow is only a fallback for login-gated pages Aura can't fetch server-side."
 ---
 
 # Aura Screenshot-to-Component Pipeline
@@ -8,6 +8,8 @@ description: "Use when the user wants to clone or adapt a UI pattern from any we
 ## Overview
 
 Full pipeline for cloning any web UI pattern into a gotcontext.ai React/Next.js component: paste a URL or drag a screenshot into aura.build → it generates React/Tailwind directly → adapt in Claude Code. The user points at a reference; you handle everything else.
+
+> **No Aura Pro subscription?** Skip Phases 2–2d and go straight to **Phase 2.5 — Direct rebuild fallback**. Capture reference screenshots (Phase 1) when useful, then rebuild in React/Tailwind without aura.build.
 
 > **Clone primitive (updated 2026-06-06, per `docs/audits/2026-06-06-ui-ux-design-pipeline-playbook.md` gap #3):** Aura's clone is **NATIVE** — paste a URL or drag in a screenshot and Aura converts it to React-mode components in-app. No Chrome browser extension is required for the core flow. The Anima/Chrome-extension path is only a **fallback for login-gated pages** Aura can't fetch server-side (use the screenshot-upload path below). Figma export (Phase 3) is optional/downstream for design review only.
 

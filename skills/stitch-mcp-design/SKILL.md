@@ -38,6 +38,8 @@ Always open the **phase skill’s** `skills/<slug>/SKILL.md` (not only this rout
 
 ## vs Aura / Figma / Claude Design
 
+Canonical copy: repo `AGENTS.md` § Design path matrix
+
 | Path | Skill | When |
 |------|-------|------|
 | **1D Stitch** | this + phase skills | Greenfield NL → Stitch screens → code |

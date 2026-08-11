@@ -1,6 +1,6 @@
 ---
 name: stitch-react-vite-dashboard
-description: Adapter pointer to canonical skills/stitch-react-vite-dashboard for Cursor
+description: "Convert Stitch designs into production React + Vite dashboards with TanStack Query, accessible tokens from DESIGN.md, and Web3-ready patterns (ethers/viem)."
 ---
 
 # stitch-react-vite-dashboard (Cursor adapter)

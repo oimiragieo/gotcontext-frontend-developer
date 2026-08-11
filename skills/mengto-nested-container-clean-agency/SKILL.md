@@ -1,6 +1,6 @@
 ---
 name: mengto-nested-container-clean-agency
-description: "Create a clean agency design system built from nested containers, with an outer editorial shell, inset dark feature blocks, rounded premium cards, and restrained accent color."
+description: "Use when building a clean agency system from nested containers — outer editorial shell, inset dark feature blocks, rounded premium cards, and restrained accent color. Prefer this over mengto-nested-container-frames when agency editorial polish leads; prefer over mengto-agency-grid-layout-minimal when nested shells/cards lead, not oversized type grids."
 ---
 
 # Nested Container Clean Agency Skill

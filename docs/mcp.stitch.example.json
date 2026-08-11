@@ -1,4 +1,5 @@
 {
+  "_comment": "API key from Google Stitch / AI Studio settings (no secrets in git). Claude Code: register this MCP server via Claude Code MCP config with the same url + X-Goog-Api-Key header. See docs/README.md § Stitch MCP setup.",
   "mcpServers": {
     "stitch": {
       "url": "https://stitch.googleapis.com/mcp",

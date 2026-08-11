@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-matterjs
+description: "Use when implementing 2D physics interactions with Matter.js, including Engine/World setup, Render/Runner configuration, adding bodies and constraints, and scroll/interaction-friendly canvas scenes."
+applyTo: "**/*"
 ---
 
 # mengto-matterjs

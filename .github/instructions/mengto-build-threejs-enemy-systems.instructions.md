@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-build-threejs-enemy-systems
+description: "Use when building or refactoring reusable, data-driven enemy archetype and moveset systems for Three.js action games\u2014content schemas, model/rig conventions, combat timing and contact contracts, runtime state boundaries, placeholders, fixtures, or playthrough validation."
+applyTo: "**/*"
 ---
 
 # mengto-build-threejs-enemy-systems

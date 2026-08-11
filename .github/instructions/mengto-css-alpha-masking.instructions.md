@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-css-alpha-masking
+description: "Apply CSS alpha masking with linear-gradient for horizontal or vertical edge fades (mask-image and -webkit-mask-image). Use when asked for alpha masks, fade edges, or CSS mask gradients."
+applyTo: "**/*"
 ---
 
 # mengto-css-alpha-masking

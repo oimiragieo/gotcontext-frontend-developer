@@ -1,6 +1,6 @@
 ---
 name: mengto-build-mobile-threejs-games
-description: Build, tune, or test a Three.js game for mobile web. Use for touch movement, action controls, target selection, touch inventory, safe areas, portrait/landscape layouts, responsive HUD, battery/performance budgets, and real mobile browser QA.
+description: "Use when building, tuning, or QA-testing a Three.js game for mobile web: touch movement and actions, target selection, touch inventory, safe areas, portrait/landscape HUD, battery/performance budgets, and real-device browser verification."
 ---
 
 # Build Mobile Three.js Games

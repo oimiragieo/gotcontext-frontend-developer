@@ -605,10 +605,6 @@
       "source": "ui-ux-pro-max-skill-main/cli/assets/skills/brand"
     },
     {
-      "slug": "uupm-core",
-      "source": "ui-ux-pro-max-skill-main/src/ui-ux-pro-max"
-    },
-    {
       "slug": "uupm-design",
       "source": "ui-ux-pro-max-skill-main/cli/assets/skills/design"
     },

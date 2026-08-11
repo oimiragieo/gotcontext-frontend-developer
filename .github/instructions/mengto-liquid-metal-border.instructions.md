@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-liquid-metal-border
+description: "Add and tune animated liquid-metal WebGL borders with the React `metal-fx` package. Use when buttons, icon controls, chips, tabs, cards, or selected surfaces need a metallic active, selected, hover, focus, or premium border; when implementing the MetalFx component from metal.jakubantalik.com; or when troubleshooting its presets, themes, strength, glow, reflections, sizing, radius, animation, accessibility, SSR, or performance."
+applyTo: "**/*"
 ---
 
 # mengto-liquid-metal-border

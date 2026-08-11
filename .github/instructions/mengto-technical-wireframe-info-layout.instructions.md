@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-technical-wireframe-info-layout
+description: "Use when designing a monochrome technical wireframe system with exploded 3D structure, connector annotations, sparse information labels, and precise dark diagnostic framing."
+applyTo: "**/*"
 ---
 
 # mengto-technical-wireframe-info-layout

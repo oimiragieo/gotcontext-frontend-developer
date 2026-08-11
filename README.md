@@ -27,6 +27,19 @@ Google Stitch MCP + pack skills: start at `stitch-mcp-design` (~**400 credits/da
 
 Other design paths: Aura clone → `aura-screenshot-clone`; Figma → Figma MCP; Claude Design → `claude-design`.
 
+## Skill router
+
+| Prefix | Reach first |
+|--------|-------------|
+| craft (no prefix) | `stitch-mcp-design`, `frontend-audit`, `impeccable`, `cinematic-3d-website`, `claude-design`, `aura-screenshot-clone` |
+| `mengto-*` | Match visual brief |
+| `uupm-*` | `uupm-ui-ux-pro-max` |
+| `threejs-*` | Prefer over stale r128 CSV pins |
+| `stitch-*` | After `stitch-mcp-design` · [`STITCH_PHASES.json`](skills/STITCH_PHASES.json) |
+| `sample-*` / `mkt-*` / `ai-*` | Pattern, CRO, or AI-UX concerns |
+
+Full design-path matrix and intent shortcuts: [AGENTS.md](AGENTS.md) § Skill router.
+
 ## License
 
 [LICENSE](LICENSE) · [NOTICE.txt](NOTICE.txt) · [ATTRIBUTION.md](ATTRIBUTION.md) · [LICENSES/](LICENSES/)
@@ -34,3 +47,5 @@ Other design paths: Aura clone → `aura-screenshot-clone`; Figma → Figma MCP;
 ## Agent entry
 
 [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md) · `manifest.json` / `provenance.json`
+
+Pack freshness (GSAP / Three.js / Motion CWV): [AGENTS.md](AGENTS.md) § Pack errata.

@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-blue-cloudy-clean-modern
+description: "Use when designing a clean modern light UI with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography. Prefer this over mengto-clean-minimal-beige-light-mode when sky/cloud blue is the mood, not warm beige paper."
+applyTo: "**/*"
 ---
 
 # mengto-blue-cloudy-clean-modern

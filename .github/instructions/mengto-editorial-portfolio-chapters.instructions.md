@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-editorial-portfolio-chapters
+description: "Use when creating or redesigning creative-studio, agency, photographer, artist, or portfolio sites where project work leads\u2014dark editorial shells, full-bleed campaign media, color-coded case-study chapters, oversized service typography, restrained reveals, and a decisive contact finale."
+applyTo: "**/*"
 ---
 
 # mengto-editorial-portfolio-chapters

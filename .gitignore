@@ -74,3 +74,10 @@ CODEBASE_MAP.md
 PACK_INTEGRITY.v1.json
 CUTOVER.json
 thinktank_merge_manifest.json
+
+# SDD scratch (local-only; omit from release PRs)
+.superpowers/
+docs/superpowers/
+
+# Local worktrees
+.worktrees/

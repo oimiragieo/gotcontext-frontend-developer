@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-tech-green-dark-mode-modern
+description: "Use when building a modern dark technical UI with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow. Prefer this over mengto-bright-green-tech-system-webgl when emerald accents on matte dashboards lead, not a bright-green WebGL visualization zone."
+applyTo: "**/*"
 ---
 
 # mengto-tech-green-dark-mode-modern

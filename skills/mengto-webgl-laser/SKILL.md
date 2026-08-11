@@ -1,6 +1,6 @@
 ---
 name: mengto-webgl-laser
-description: Create a fixed full-screen WebGL laser background effect with a thin white-hot vertical core, restrained brand-colored halo, and soft smoky fog around the beam. Use only for laser background effects, not full page layout, copy, generic hero scenes, particles, or unrelated motion systems.
+description: "Use when adding a fixed full-screen WebGL laser background with a thin white-hot vertical core, restrained brand-colored halo, and soft smoky fog. Prefer this over mengto-corner-lasers when the beam is a full-viewport WebGL background, not corner ornaments; not for full page layout, copy, or unrelated particle systems."
 ---
 
 # WebGL Laser

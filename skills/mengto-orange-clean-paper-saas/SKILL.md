@@ -1,6 +1,6 @@
 ---
 name: mengto-orange-clean-paper-saas
-description: "Create a clean paper-toned SaaS design system with warm neutrals, orange accent signals, rounded premium forms, and polished product illustration surfaces."
+description: "Use when designing a clean paper-toned SaaS system with warm neutrals, orange accent signals, rounded premium forms, and polished product illustration surfaces. Prefer this over mengto-clean-minimal-beige-light-mode when orange SaaS accents and product illustration lead."
 ---
 
 # Orange Clean Paper SaaS Skill

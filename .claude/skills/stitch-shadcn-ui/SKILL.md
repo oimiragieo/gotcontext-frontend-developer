@@ -1,6 +1,6 @@
 ---
 name: stitch-shadcn-ui
-description: Adapter pointer to canonical skills/stitch-shadcn-ui for Claude Code
+description: "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, and best practices."
 ---
 
 # stitch-shadcn-ui (Claude Code adapter)

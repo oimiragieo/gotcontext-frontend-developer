@@ -51,7 +51,7 @@ Motion should communicate, not decorate:
 ## Quick Start: Button Microinteraction
 
 ```tsx
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export function InteractiveButton({ children, onClick }) {
   return (
@@ -134,7 +134,7 @@ function Toggle({ checked, onChange }) {
 **Framer Motion layout animations**:
 
 ```tsx
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 
 function PageTransition({ children, key }) {
   return (

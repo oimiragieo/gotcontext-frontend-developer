@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-marquee-loop
+description: "Use when applying seamless infinite marquee loops with duplicated items for logo strips, tickers, or continuous horizontal content."
+applyTo: "**/*"
 ---
 
 # mengto-marquee-loop

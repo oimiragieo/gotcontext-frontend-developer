@@ -1,6 +1,6 @@
 ---
 name: mengto-optimize-threejs-games
-description: Profile, diagnose, and improve Three.js or WebGL game performance without regressing gameplay. Use for frame-time drops, CPU/GPU pressure, draw calls, texture and geometry budgets, animation loops, adaptive quality, mobile performance, and browser performance verification.
+description: Use when profiling, diagnosing, or improving Three.js or WebGL game performance without regressing gameplay—frame-time drops, CPU/GPU pressure, draw calls, texture/geometry budgets, animation loops, adaptive quality, mobile performance, and browser performance verification.
 ---
 
 # Optimize Three.js Games

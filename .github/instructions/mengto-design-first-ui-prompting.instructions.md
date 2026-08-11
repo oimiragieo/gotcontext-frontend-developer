@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — mengto-design-first-ui-prompting
+description: "Use when you need design-first, spec-driven, skimmable prompts for UI generation. Covers prompt structure, constraints, variations, typography/spacing rules, and iteration workflow for consistent UI outputs."
+applyTo: "**/*"
 ---
 
 # mengto-design-first-ui-prompting

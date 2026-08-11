@@ -1,6 +1,6 @@
 ---
 name: mengto-tech-green-dark-mode-modern
-description: "Create a modern dark-mode technical design system with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow."
+description: "Use when building a modern dark technical UI with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow. Prefer this over mengto-bright-green-tech-system-webgl when emerald accents on matte dashboards lead, not a bright-green WebGL visualization zone."
 ---
 
 # Tech Green Dark Mode Modern Skill

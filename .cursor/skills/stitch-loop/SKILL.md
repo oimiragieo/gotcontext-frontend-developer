@@ -1,6 +1,6 @@
 ---
 name: stitch-loop
-description: Adapter pointer to canonical skills/stitch-loop for Cursor
+description: "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
 ---
 
 # stitch-loop (Cursor adapter)

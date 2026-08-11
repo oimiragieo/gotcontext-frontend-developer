@@ -5,7 +5,7 @@
 ### Loading Button
 
 ```tsx
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 
 interface LoadingButtonProps {
   isLoading: boolean;
@@ -182,7 +182,7 @@ function FloatingInput({
 ### Shake on Error
 
 ```tsx
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "motion/react";
 
 function ShakeInput({ error, ...props }: InputProps & { error?: string }) {
   const controls = useAnimation();
@@ -258,7 +258,7 @@ function TextareaWithCount({ maxLength = 280 }: { maxLength?: number }) {
 ### Toast Notifications
 
 ```tsx
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { createContext, useContext, useState, useCallback } from "react";
 
 interface Toast {
@@ -375,7 +375,7 @@ function ConfirmButton({
 ### Active Link Indicator
 
 ```tsx
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { usePathname } from "next/navigation";
 
 function Navigation({ items }: { items: { href: string; label: string }[] }) {
@@ -497,7 +497,7 @@ function LikeButton({ postId, initialLiked, initialCount }) {
 ### Pull to Refresh
 
 ```tsx
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "motion/react";
 
 function PullToRefresh({ onRefresh, children }) {
   const y = useMotionValue(0);

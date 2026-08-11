@@ -1,6 +1,6 @@
 ---
 name: stitch-remotion
-description: Adapter pointer to canonical skills/stitch-remotion for Cursor
+description: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
 ---
 
 # stitch-remotion (Cursor adapter)

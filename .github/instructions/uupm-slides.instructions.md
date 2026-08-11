@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — uupm-slides
+description: "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies."
+applyTo: "**/*"
 ---
 
 # uupm-slides

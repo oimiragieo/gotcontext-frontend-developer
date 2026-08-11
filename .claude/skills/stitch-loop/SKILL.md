@@ -1,6 +1,6 @@
 ---
 name: stitch-loop
-description: Adapter pointer to canonical skills/stitch-loop for Claude Code
+description: "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
 ---
 
 # stitch-loop (Claude Code adapter)

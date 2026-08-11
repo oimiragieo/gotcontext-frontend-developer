@@ -1,5 +1,6 @@
 ---
-description: gotcontext-frontend-developer skill pointer — stitch-react-vite-dashboard
+description: "Convert Stitch designs into production React + Vite dashboards with TanStack Query, accessible tokens from DESIGN.md, and Web3-ready patterns (ethers/viem)."
+applyTo: "**/*"
 ---
 
 # stitch-react-vite-dashboard

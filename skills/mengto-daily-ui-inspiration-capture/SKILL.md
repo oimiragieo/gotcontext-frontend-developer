@@ -129,11 +129,14 @@ For each item, include fields such as:
 
 ## Verification
 
-Run the duplicate checker before committing:
+If this skill ships a `scripts/check-ui-inspiration-duplicates.mjs` helper, run it before committing:
 
 ```bash
+# only when the script is present in this skill directory
 node scripts/check-ui-inspiration-duplicates.mjs articles/YYYY-MM-DD-ui-inspiration-capture/manifest.json
 ```
+
+Otherwise verify duplicates manually (same titles/URLs across items in `manifest.json`).
 
 Verify:
 
