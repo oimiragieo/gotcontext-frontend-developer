@@ -44,4 +44,4 @@
 ambient-section-particles, build-mobile-threejs-games, build-threejs-enemy-systems, build-threejs-scroll-worlds, cinematic-gsap-lenis-motion-system, editorial-portfolio-chapters, editorial-service-booking, falling-leaves, operational-enterprise-ai, optimize-threejs-games, pointer-trail-emitter, product-proof-saas, reveal-hover-effect, scroll-progress-timeline, scroll-scrubbed-visual-sequence, scroll-scrubbed-word-reveal, staggered-word-reveal.
 
 ### Commits
-- `bf2eec7` — fix: lead 17 mengto descriptions with Use when trigger phrasing
+- `c482617` — fix: lead 17 mengto descriptions with Use when trigger phrasing
