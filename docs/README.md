@@ -5,6 +5,8 @@
 - [ATTRIBUTION.md](../ATTRIBUTION.md) — licenses
 - [mcp.stitch.example.json](mcp.stitch.example.json) — Stitch MCP template (no secrets)
 
+`docs/superpowers/` is **local-only** SDD scratch (plans, briefs, reports). Omit it from release PRs; do not stage or commit it on merge tips.
+
 ## Stitch MCP setup
 
 1. Get an API key from **Google Stitch / AI Studio settings** (see Google AI Studio / Stitch project settings — no secrets in this repo).
