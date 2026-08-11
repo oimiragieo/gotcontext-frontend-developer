@@ -1,6 +1,6 @@
 ---
 name: mengto-falling-leaves
-description: "Build falling leaves that read as leaves, with each one tumbling on its own axis so it presents a face, thins to an edge, and opens out again, and with its sideways slip driven by that same tumble. Covers the 2-D canvas build and the instanced-3-D variant, where leaves are recycled from, density-versus-count maths, depth layering, colour under a tone-mapped composite, reduced motion, and visibility pausing. Use for autumn maple, sakura petals, blossom, ash, snowfall shapes, or any drifting foliage where a generic particle field reads as confetti."
+description: "Use when building falling leaves that read as leaves (not confetti): each leaf tumbling on its own axis with sideways slip driven by that tumble. Covers 2D canvas and instanced 3D, recycling, density maths, depth layering, tone-mapped colour, reduced motion, and visibility pausing\u2014for maple, sakura, blossom, ash, or snowfall shapes."
 ---
 
 # mengto-falling-leaves (Claude Code adapter)

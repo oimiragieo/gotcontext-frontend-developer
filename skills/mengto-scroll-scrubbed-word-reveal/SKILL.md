@@ -1,6 +1,6 @@
 ---
 name: mengto-scroll-scrubbed-word-reveal
-description: Reveal marked-up text word by word as scroll progress advances, while preserving semantic inline links, emphasis, responsive line wrapping, and reduced-motion readability. Use for headlines, quotes, manifestos, product statements, onboarding messages, or editorial passages where scrolling should pace comprehension rather than simulate typing.
+description: Use when revealing marked-up text word by word as scroll progress advances while preserving semantic inline links, emphasis, responsive wrapping, and reduced-motion readability—headlines, quotes, manifestos, product statements, onboarding, or editorial passages paced by scroll rather than typing simulation.
 ---
 
 # Scroll-Scrubbed Word Reveal

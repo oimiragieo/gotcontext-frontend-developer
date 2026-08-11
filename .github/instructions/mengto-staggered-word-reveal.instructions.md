@@ -1,5 +1,5 @@
 ---
-description: "Create subtle editorial word-by-word text reveal animations where each word fades and rises into place once it enters the viewport. Use for premium portfolio headlines, hero copy, section intros, and short marketing text that needs a cinematic staggered reveal with IntersectionObserver or in-view detection."
+description: "Use when creating subtle editorial word-by-word text reveals where each word fades and rises into place on viewport entry\u2014premium portfolio headlines, hero copy, section intros, and short marketing text needing a cinematic staggered reveal with IntersectionObserver or in-view detection."
 applyTo: "**/*"
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: "Create or redesign SaaS and AI product landing pages where a real workflow, interface, or deterministic demo is the central proof. Use for pale atmospheric shells, product UI in the hero, prompt-to-output stories, audience tabs, compact feature modules, honest pricing comparisons, and FAQ handoffs."
+description: "Use when creating or redesigning SaaS or AI product landing pages where a real workflow, interface, or deterministic demo is the central proof\u2014pale atmospheric shells, product UI in the hero, prompt-to-output stories, audience tabs, compact feature modules, honest pricing, and FAQ handoffs."
 applyTo: "**/*"
 ---
 

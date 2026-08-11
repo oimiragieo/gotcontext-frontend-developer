@@ -1,6 +1,6 @@
 ---
 name: mengto-scroll-scrubbed-visual-sequence
-description: "Build reversible scroll-controlled visual transformations with a pinned or sticky stage, normalized progress, and video, image-sequence, canvas, SVG, or DOM renderers. Use for hero transformations, product assembly, interface state walkthroughs, object rotation, diagrams, or photo sequences that must move forward and backward with native scrolling."
+description: "Use when building reversible scroll-controlled visual transformations with a pinned or sticky stage, normalized progress, and video, image-sequence, canvas, SVG, or DOM renderers\u2014hero transformations, product assembly, UI walkthroughs, object rotation, diagrams, or photo sequences that scrub forward and back with native scroll."
 ---
 
 # mengto-scroll-scrubbed-visual-sequence (Cursor adapter)

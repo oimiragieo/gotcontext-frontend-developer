@@ -1,6 +1,6 @@
 ---
 name: mengto-pointer-trail-emitter
-description: Build a cursor trail whose spacing stays constant at any hand speed, by emitting motes per unit of distance travelled rather than on a timer, so a flick draws the same continuous ribbon as a crawl instead of breaking into scattered dots. Covers sub-segment placement, the ring-buffer ordering trap, the idle breath a distance emitter needs, anchoring the trail to the screen in a 3-D scene, scaling scatter against the plane it hangs on, coasting instead of stopping dead, touch and reduced-motion fallbacks, and why moving the emitter to a DOM overlay to raise its z-index costs more than it buys. Use for cursor wisps, pointer sparks, embers, magic trails, comet tails, plankton, dust, or any mote trail that must stay legible however fast the hand moves.
+description: Use when building a cursor trail whose spacing stays constant at any hand speed by emitting motes per distance travelled (not on a timer)—sub-segment placement, ring-buffer ordering, idle breath, 3D screen anchoring, coasting, touch and reduced-motion fallbacks—for wisps, sparks, embers, comet tails, plankton, or dust.
 ---
 
 # Pointer Trail Emitter

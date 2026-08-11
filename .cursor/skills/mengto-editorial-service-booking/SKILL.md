@@ -1,6 +1,6 @@
 ---
 name: mengto-editorial-service-booking
-description: "Create or redesign appointment-based service websites for salons, barbers, spas, wellness studios, clinics, and hospitality brands. Use for warm editorial layouts, serif-led identity, documentary portrait crops, calm treatment selectors, location-aware booking, and operational states that remain elegant and trustworthy."
+description: "Use when creating or redesigning appointment-based service sites for salons, barbers, spas, wellness studios, clinics, or hospitality\u2014warm editorial layouts, serif-led identity, documentary portraits, calm treatment selectors, location-aware booking, and trustworthy operational states."
 ---
 
 # mengto-editorial-service-booking (Cursor adapter)
