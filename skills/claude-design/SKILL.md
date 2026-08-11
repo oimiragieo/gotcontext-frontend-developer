@@ -118,6 +118,8 @@ Scope is **organization-wide** — auto-applies for all team members on Team/Ent
 
 ## Decision matrix vs other UI tools in this stack
 
+Canonical copy: repo `AGENTS.md` § Design path matrix
+
 | Situation | First reach for |
 |---|---|
 | Brand-new feature mockup, no existing reference | **claude-design** |
