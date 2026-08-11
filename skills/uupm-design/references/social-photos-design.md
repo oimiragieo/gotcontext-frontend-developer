@@ -1,6 +1,6 @@
 # Social Photos Design Guide
 
-Design social media images via HTML/CSS rendering + screenshot export. Orchestrates `ui-ux-pro-max`, `brand`, `design-system`, and `chrome-devtools` skills.
+Design social media images via HTML/CSS rendering + screenshot export. Orchestrates `uupm-ui-ux-pro-max`, `uupm-brand`, and `uupm-design-system`. `frontend-design` is **not in this pack** — skip or use host harness equivalents; do not invent paths.
 
 ## Platform Sizes
 
@@ -57,9 +57,9 @@ Present ideas to user via `AskUserQuestion` for approval before designing.
 
 Activate these skills in sequence:
 
-1. **`/ckm:brand`** — Extract brand colors, fonts, voice from user's project
-2. **`/ckm:design-system`** — Get design tokens (spacing, typography scale, color palette)
-3. **Randomly invoke ONE of:** `/ck:ui-ux-pro-max` OR `/ck:frontend-design` — for layout, hierarchy, visual balance. Pick one at random each run for design variety.
+1. **`uupm-brand`** — Extract brand colors, fonts, voice from user's project
+2. **`uupm-design-system`** — Get design tokens (spacing, typography scale, color palette)
+3. **`uupm-ui-ux-pro-max`** for layout, hierarchy, visual balance (or host `frontend-design` if available — not in this pack; do not invent paths).
 
 For each approved idea + each target size, create an HTML file:
 
@@ -119,11 +119,15 @@ output/social-photos/
 
 ### Step 5: Screenshot Export
 
-Use Chrome headless, `chrome-devtools` skill, or Playwright/Puppeteer to capture exact-size screenshots.
+Export at exact CSS pixel dimensions:
+
+1. Prefer Playwright `page.screenshot({ path, fullPage: false })` with `deviceScaleFactor: 2` when available.
+2. Else Claude-in-Chrome / browser MCP screenshot tools.
+3. Else ask the user for a manual capture.
 
 **IMPORTANT:** Always add a delay (3-5s) after page load for fonts/images to fully render before capture.
 
-#### Option A: Chrome Headless CLI (Recommended — zero dependencies)
+#### Option A: Chrome Headless CLI (zero dependencies)
 
 ```bash
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
@@ -145,14 +149,13 @@ Key flags:
 - `--hide-scrollbars` — prevents scrollbar artifacts in screenshots
 - `--window-size=WxH` — sets exact pixel dimensions
 
-#### Option B: chrome-devtools skill
+#### Option B: Browser MCP / Claude-in-Chrome
 
-Invoke `/chrome-devtools` with instructions to:
 1. Open each HTML file in browser
 2. Set viewport to exact target dimensions
 3. Wait 3-5s for fonts/images to fully load
 4. Screenshot full page to PNG
-5. Save to `output/social-photos/exports/`
+5. Save to `output/social-photos/exports/` (or ask the user for a manual capture if no MCP tool is available)
 
 #### Option C: Playwright script
 
@@ -210,7 +213,7 @@ async function captureScreenshots(htmlFiles) {
 
 ### Step 6: Verify & Fix Designs
 
-Use Chrome MCP or `chrome-devtools` skill to visually inspect each exported PNG:
+Use Claude-in-Chrome / browser MCP (or open the PNGs locally) to visually inspect each exported PNG:
 
 1. Open exported screenshots and check for layout/styling issues
 2. Verify: fonts rendered correctly, colors match brand, text readable at thumbnail size
@@ -269,7 +272,7 @@ Report structure:
 
 ### Step 8: Organize Output
 
-Invoke `assets-organizing` skill to organize all output files and reports:
+Organize all output files and reports:
 - Move/copy exported PNGs to proper asset directories
 - Ensure reports are in `plans/reports/` with correct naming
 - Clean up intermediate HTML files if requested
@@ -326,4 +329,4 @@ This sub-skill handles social media image design only. Does NOT handle:
 - Animation/motion graphics
 - Print production files (CMYK, bleed)
 - Direct social media posting/scheduling
-- AI image generation (use `ai-artist` skill for that)
+- AI image generation (`ai-artist` is **not in this pack** — skip or use host harness equivalents; do not invent paths)

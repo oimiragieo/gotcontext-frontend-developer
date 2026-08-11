@@ -27,7 +27,7 @@ Available on **Pro / Max / Team / Enterprise**. NOT on Free. Usage now **shares 
 
 - **Cloning a specific reference UI screenshot/URL** → use `aura-screenshot-clone` skill (aura.build Pro is the project's asset source-of-truth)
 - **Greenfield high-fi UI from natural language via Google Stitch MCP** → use `stitch-mcp-design` (remote MCP + optional google-labs-code/stitch-skills)
-- **Translating an existing Figma file into code** → use `figma:figma-implement-design`
+- **Translating an existing Figma file into code** → use `figma-design-to-code`
 - **Mass image picking for hero/landing imagery** → use `mengto-aura-asset-images`
 - **Production component edits in the app repo** → edit the code directly; Claude Design is for the design phase, not codebase surgery
 - **Anything that needs an audit trail** (compliance, legal review, regulated industry) — research preview has no audit logs yet
@@ -124,7 +124,7 @@ Scope is **organization-wide** — auto-applies for all team members on Team/Ent
 | Pitch deck or slide work for the company | **claude-design** (Slide deck mode) |
 | Match a specific reference UI screenshot/URL | `aura-screenshot-clone` |
 | Generate/iterate UI in Google Stitch via MCP | `stitch-mcp-design` |
-| Convert an existing Figma file → React | `figma:figma-implement-design` |
+| Convert an existing Figma file → React | `figma-design-to-code` |
 | Hero/landing imagery picking | `mengto-aura-asset-images` |
 | Direct edit of a live app component | Edit the code directly — no design tool needed |
 | Visual review of a live deployed page | `frontend-audit` skill + claude-in-chrome MCP |

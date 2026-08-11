@@ -1,6 +1,6 @@
 ---
 name: uupm-banner-design
-description: "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills."
+description: "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses uupm-ui-ux-pro-max; host harness may supply image-gen equivalents (ai-artist / ai-multimodal / frontend-design are not in this pack)."
 argument-hint: "[platform] [style] [dimensions]"
 license: MIT
 metadata:
@@ -39,8 +39,8 @@ Collect via AskUserQuestion:
 
 ### Step 2: Research & Art Direction
 
-1. Activate `ui-ux-pro-max` skill for design intelligence
-2. Use Chrome browser to research Pinterest for design references:
+1. Activate `uupm-ui-ux-pro-max` skill for design intelligence
+2. Use a browser to research Pinterest for design references:
    ```
    Navigate to pinterest.com → search "[purpose] banner design [style]"
    Screenshot 3-5 reference pins for art direction inspiration
@@ -52,76 +52,32 @@ Collect via AskUserQuestion:
 
 For each art direction option:
 
-1. **Create HTML/CSS banner** using `frontend-design` skill
+1. **Create HTML/CSS banner**
    - Use exact platform dimensions from size reference
    - Apply safe zone rules (critical content in central 70-80%)
    - Max 2 typefaces, single CTA, 4.5:1 contrast ratio
-   - Inject brand context via `inject-brand-context.cjs`
+   - Inject brand context via `inject-brand-context.cjs` when available
+   - `frontend-design` is **not in this pack** — skip or use host harness equivalents; do not invent paths.
 
-2. **Generate visual elements** with `ai-artist` + `ai-multimodal` skills
+2. **Generate visual elements** (optional)
+   - `ai-artist` and `ai-multimodal` are **not in this pack** — skip or use host harness equivalents; do not invent paths.
+   - Prefer user-supplied assets, CSS/SVG patterns, or host image-gen tools when available.
+   - Aspect ratios: `1:1`, `16:9`, `9:16`, `3:4`, `4:3`, `2:3`, `3:2` (match platform; e.g. Instagram story = `9:16`)
+   - Prompt tips when generating elsewhere: style, lighting, mood, composition; "no text, no letters, no words" (text overlaid in HTML)
 
-   **a) Search prompt inspiration** (6000+ examples in ai-artist):
-   ```bash
-   python3 .claude/skills/ai-artist/scripts/search.py "<banner style keywords>"
-   ```
-
-   **b) Generate with Standard model** (fast, good for backgrounds/patterns):
-   ```bash
-   .claude/skills/.venv/bin/python3 .claude/skills/ai-multimodal/scripts/gemini_batch_process.py \
-     --task generate --model gemini-2.5-flash-image \
-     --prompt "<banner visual prompt>" --aspect-ratio <platform-ratio> \
-     --size 2K --output assets/banners/
-   ```
-
-   **c) Generate with Pro model** (4K, complex illustrations/hero visuals):
-   ```bash
-   .claude/skills/.venv/bin/python3 .claude/skills/ai-multimodal/scripts/gemini_batch_process.py \
-     --task generate --model gemini-3-pro-image-preview \
-     --prompt "<creative banner prompt>" --aspect-ratio <platform-ratio> \
-     --size 4K --output assets/banners/
-   ```
-
-   **When to use which model:**
-   | Use Case | Model | Quality |
-   |----------|-------|---------|
-   | Backgrounds, gradients, patterns | Standard (Flash) | 2K, fast |
-   | Hero illustrations, product shots | Pro | 4K, detailed |
-   | Photorealistic scenes, complex art | Pro | 4K, best quality |
-   | Quick iterations, A/B variants | Standard (Flash) | 2K, fast |
-
-   **Aspect ratios:** `1:1`, `16:9`, `9:16`, `3:4`, `4:3`, `2:3`, `3:2`
-   Match to platform - e.g., Twitter header = `3:1` (use `3:2` closest), Instagram story = `9:16`
-
-   **Pro model prompt tips** (see `ai-artist` references/nano-banana-pro-examples.md):
-   - Be descriptive: style, lighting, mood, composition, color palette
-   - Include art direction: "minimalist flat design", "cyberpunk neon", "editorial photography"
-   - Specify no-text: "no text, no letters, no words" (text overlaid in HTML step)
-
-3. **Compose final banner** — overlay text, CTA, logo on generated visual in HTML/CSS
+3. **Compose final banner** — overlay text, CTA, logo on visual in HTML/CSS
 
 ### Step 4: Export Banners to Images
 
-After designing HTML banners, export each to PNG using `chrome-devtools` skill:
+After designing HTML banners, export each to PNG:
 
-1. **Serve HTML files** via local server (python http.server or similar)
-2. **Screenshot each banner** at exact platform dimensions:
-   ```bash
-   # Export banner to PNG at exact dimensions
-   node .claude/skills/chrome-devtools/scripts/screenshot.js \
-     --url "http://localhost:8765/banner-01-minimalist.html" \
-     --width 1500 --height 500 \
-     --output "assets/banners/{campaign}/{variant}-{size}.png"
-   ```
-3. **Auto-compress** if >5MB (Sharp compression built-in):
-   ```bash
-   # With custom max size threshold
-   node .claude/skills/chrome-devtools/scripts/screenshot.js \
-     --url "http://localhost:8765/banner-02-gradient.html" \
-     --width 1500 --height 500 --max-size 3 \
-     --output "assets/banners/{campaign}/{variant}-{size}.png"
-   ```
+1. Prefer Playwright `page.screenshot({ path, fullPage: false })` at exact CSS px with `deviceScaleFactor: 2` when available.
+2. Else Claude-in-Chrome / browser MCP screenshot tools.
+3. Else ask the user for a manual capture.
 
-**Output path convention** (per `assets-organizing` skill):
+Serve HTML via a local server when needed, then capture at exact platform dimensions.
+
+**Output path convention:**
 ```
 assets/banners/{campaign}/
 ├── minimalist-1500x500.png
@@ -139,7 +95,7 @@ assets/banners/{campaign}/
 
 Present all exported images side-by-side. For each option show:
 - Art direction style name
-- Exported PNG preview (use `ai-multimodal` skill to display if needed)
+- Exported PNG preview
 - Key design rationale
 - File path & dimensions
 
