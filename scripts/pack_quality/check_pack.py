@@ -182,9 +182,9 @@ def check_manifest_sync() -> None:
         record(name, f"on disk not in manifest: {missing[:8]}")
     if orphan:
         record(name, f"in manifest not on disk: {orphan[:8]}")
-    # After Task 3, uupm-core must be absent. Document expected-fail until removal.
+    # Regression: uupm-core was a duplicate of uupm-ui-ux-pro-max (removed Task 3).
     if "uupm-core" in disk or "uupm-core" in manifest_slugs:
-        record(name, "uupm-core present (expected until Task 3 removal)")
+        record(name, "uupm-core present (must remain removed)")
 
 
 def check_adapter_sync() -> None:

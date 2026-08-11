@@ -156,7 +156,6 @@ Canonical skills live in `/skills`. Instruction pointers:
 - [ui-fix-observe-first](../../skills/ui-fix-observe-first/SKILL.md)
 - [uupm-banner-design](../../skills/uupm-banner-design/SKILL.md)
 - [uupm-brand](../../skills/uupm-brand/SKILL.md)
-- [uupm-core](../../skills/uupm-core/SKILL.md)
 - [uupm-design](../../skills/uupm-design/SKILL.md)
 - [uupm-design-system](../../skills/uupm-design-system/SKILL.md)
 - [uupm-slides](../../skills/uupm-slides/SKILL.md)
