@@ -175,6 +175,17 @@ def check_manifest_sync() -> None:
         record(name, f"on disk not in manifest: {missing[:8]}")
     if orphan:
         record(name, f"in manifest not on disk: {orphan[:8]}")
+    skill_count = data.get("skill_count")
+    if skill_count != len(disk):
+        record(
+            name,
+            f"skill_count={skill_count} != disk count={len(disk)}",
+        )
+    if skill_count != len(manifest_slugs):
+        record(
+            name,
+            f"skill_count={skill_count} != manifest slug count={len(manifest_slugs)}",
+        )
     # Regression: uupm-core was a duplicate of uupm-ui-ux-pro-max (removed Task 3).
     if "uupm-core" in disk or "uupm-core" in manifest_slugs:
         record(name, "uupm-core present (must remain removed)")

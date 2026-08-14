@@ -20,11 +20,12 @@ def _run(tmp_path: Path, css: str) -> subprocess.CompletedProcess:
     node = shutil.which("node")
     if not node:
         pytest.skip("node not available")
-    (tmp_path / "sample.css").write_text(css)
+    (tmp_path / "sample.css").write_text(css, encoding="utf-8")
     return subprocess.run(
         [node, str(SCRIPT), "--dir", str(tmp_path)],
         capture_output=True,
         text=True,
+        encoding="utf-8",
     )
 
 

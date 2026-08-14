@@ -1,0 +1,19 @@
+[project]
+name = "gotcontext-frontend-developer"
+version = "1.0.0"
+description = "Multi-harness UI/UX agent skill pack for Cursor, Claude Code, and GitHub Copilot"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["skills", "scripts"]
+python_files = ["test_*.py"]

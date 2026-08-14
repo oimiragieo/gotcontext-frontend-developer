@@ -2,7 +2,7 @@
 
 Multi-harness UI/UX agent skill pack for Cursor, Claude Code, and GitHub Copilot.
 
-**157** skills under `skills/<name>/SKILL.md`. Sibling products (optional): gotcontext-memory, tensor-grep.
+**156** skills under `skills/<name>/SKILL.md`. Sibling products (optional): gotcontext-memory, tensor-grep.
 
 ## Install
 
